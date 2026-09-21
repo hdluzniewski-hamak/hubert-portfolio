@@ -50,9 +50,7 @@
       position:absolute;
       inset:0;
       z-index:-2;
-      background:
-        linear-gradient(rgba(243,240,232,.52),rgba(243,240,232,.52)),
-        url("assets/hero.webp") center center / cover no-repeat;
+      background:url("assets/hero.webp") center center / cover no-repeat;
       transform:scale(1.01)
     }
     .hero::after{
@@ -60,26 +58,28 @@
       position:absolute;
       inset:0;
       z-index:-1;
-      background:linear-gradient(90deg,rgba(243,240,232,.84) 0%,rgba(243,240,232,.64) 36%,rgba(243,240,232,.34) 62%,rgba(243,240,232,.16) 100%)
+      background:linear-gradient(90deg,rgba(0,0,0,.30) 0%,rgba(0,0,0,.16) 38%,rgba(0,0,0,.05) 68%,rgba(0,0,0,0) 100%)
     }
     .hero-copy{
       padding-bottom:7vh;
-      width:min(760px,72vw);
+      width:min(820px,74vw);
       position:relative;
-      z-index:2
+      z-index:2;
+      color:#fff;
+      text-shadow:0 1px 14px rgba(0,0,0,.18)
     }
     .eyebrow,.kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase}
     h1{
       margin:20px 0 28px;
       font-size:clamp(60px,7.2vw,132px);
-      line-height:.88;
+      line-height:1.00;
       font-weight:400;
       letter-spacing:-.055em;
       max-width:100%
     }
-    .lead{max-width:520px;font-size:16px;line-height:1.5}
+    .lead{max-width:520px;font-size:16px;line-height:1.5;color:#fff}
     .hero-media{display:none}
-    .scroll{display:inline-block;margin-top:34px;border-bottom:1px solid;padding-bottom:4px;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+    .scroll{display:inline-block;margin-top:34px;border-bottom:1px solid #fff;padding-bottom:4px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#fff}
 
     section{padding:100px var(--pad)}
     .section-head{
@@ -149,7 +149,7 @@
         padding-bottom:4vh
       }
       .hero::after{
-        background:linear-gradient(90deg,rgba(243,240,232,.88) 0%,rgba(243,240,232,.70) 55%,rgba(243,240,232,.34) 100%)
+        background:linear-gradient(90deg,rgba(0,0,0,.34) 0%,rgba(0,0,0,.20) 55%,rgba(0,0,0,.06) 100%)
       }
       .section-head{grid-template-columns:1fr}
       .section-intro{justify-self:start}
@@ -174,7 +174,7 @@
       .hero-copy{width:92vw;padding-bottom:3vh}
       .hero::before{background-position:center center}
       .hero::after{
-        background:linear-gradient(90deg,rgba(243,240,232,.90) 0%,rgba(243,240,232,.74) 70%,rgba(243,240,232,.52) 100%)
+        background:linear-gradient(90deg,rgba(0,0,0,.38) 0%,rgba(0,0,0,.24) 70%,rgba(0,0,0,.10) 100%)
       }
       section{padding-top:72px;padding-bottom:72px}
       .art-grid{grid-template-columns:1fr}
