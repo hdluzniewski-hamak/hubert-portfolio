@@ -178,21 +178,40 @@
 
     .art{background:var(--paper)}
     .art-grid{
-      display:grid;grid-template-columns:repeat(12,1fr);gap:16px;
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:34px 18px;
       align-items:start
     }
-    .art-item{overflow:hidden;background:#e6e0d6}
-    .art-item img{height:auto;transition:transform .5s}
-    .art-item:hover img{transform:scale(1.015)}
+    .art-item{background:transparent}
+    .art-frame{overflow:hidden;background:#e6e0d6}
+    .art-item img{
+      width:100%;
+      height:auto;
+      transition:transform .5s ease
+    }
+    .art-item:hover img{transform:scale(1.012)}
+    .art-caption{padding-top:10px}
+    .art-title{
+      font-size:11px;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      margin-bottom:4px
+    }
+    .art-medium{
+      font-size:11px;
+      color:var(--muted);
+      line-height:1.35
+    }
     .art-item:nth-child(1){grid-column:1/span 4}
-    .art-item:nth-child(2){grid-column:5/span 3;margin-top:90px}
-    .art-item:nth-child(3){grid-column:8/span 5}
-    .art-item:nth-child(4){grid-column:1/span 3;margin-top:20px}
-    .art-item:nth-child(5){grid-column:4/span 5;margin-top:-40px}
-    .art-item:nth-child(6){grid-column:9/span 4;margin-top:70px}
+    .art-item:nth-child(2){grid-column:6/span 3;margin-top:86px}
+    .art-item:nth-child(3){grid-column:9/span 4}
+    .art-item:nth-child(4){grid-column:1/span 3;margin-top:28px}
+    .art-item:nth-child(5){grid-column:4/span 5;margin-top:-28px}
+    .art-item:nth-child(6){grid-column:10/span 3;margin-top:70px}
     .art-item:nth-child(7){grid-column:1/span 5}
-    .art-item:nth-child(8){grid-column:6/span 3;margin-top:100px}
-    .art-item:nth-child(9){grid-column:9/span 4}
+    .art-item:nth-child(8){grid-column:7/span 3;margin-top:94px}
+    .art-item:nth-child(9){grid-column:10/span 3}
 
     .about{
       display:grid;grid-template-columns:1.15fr .85fr;gap:80px;
@@ -298,21 +317,93 @@
     <section id="art" class="art">
       <div class="section-head">
         <div>
-          <div class="kicker">Paintings / drawings / visual explorations</div>
+          <div class="kicker">Selected works</div>
           <h2 class="section-title">ART</h2>
         </div>
-        <div class="section-intro">A different way of telling the same stories.</div>
+        <div class="section-intro">Paintings, drawings and selected visual works.</div>
       </div>
+
       <div class="art-grid">
-        <div class="art-item"><img src="assets/art-01.webp" alt=""></div>
-        <div class="art-item"><img src="assets/art-02.webp" alt=""></div>
-        <div class="art-item"><img src="assets/art-03.webp" alt=""></div>
-        <div class="art-item"><img src="assets/art-04.webp" alt=""></div>
-        <div class="art-item"><img src="assets/art-05.webp" alt=""></div>
-        <div class="art-item"><img src="assets/art-06.webp" alt=""></div>
-        <div class="art-item"><img src="assets/art-07.webp" alt=""></div>
-        <div class="art-item"><img src="assets/art-08.webp" alt=""></div>
-        <div class="art-item"><img src="assets/art-09.webp" alt=""></div>
+        <!-- ARTWORK 01 -->
+        <article class="art-item">
+          <div class="art-frame"><img src="assets/art-01.webp" alt="Artwork 01"></div>
+          <div class="art-caption">
+            <div class="art-title" data-art-title="1">UNTITLED 01</div>
+            <div class="art-medium" data-art-medium="1">Oil on canvas, 50 × 70 cm</div>
+          </div>
+        </article>
+
+        <!-- ARTWORK 02 -->
+        <article class="art-item">
+          <div class="art-frame"><img src="assets/art-02.webp" alt="Artwork 02"></div>
+          <div class="art-caption">
+            <div class="art-title" data-art-title="2">UNTITLED 02</div>
+            <div class="art-medium" data-art-medium="2">Oil on canvas, 50 × 70 cm</div>
+          </div>
+        </article>
+
+        <!-- ARTWORK 03 -->
+        <article class="art-item">
+          <div class="art-frame"><img src="assets/art-03.webp" alt="Artwork 03"></div>
+          <div class="art-caption">
+            <div class="art-title" data-art-title="3">UNTITLED 03</div>
+            <div class="art-medium" data-art-medium="3">Oil on canvas, 50 × 70 cm</div>
+          </div>
+        </article>
+
+        <!-- ARTWORK 04 -->
+        <article class="art-item">
+          <div class="art-frame"><img src="assets/art-04.webp" alt="Artwork 04"></div>
+          <div class="art-caption">
+            <div class="art-title" data-art-title="4">UNTITLED 04</div>
+            <div class="art-medium" data-art-medium="4">Digital painting</div>
+          </div>
+        </article>
+
+        <!-- ARTWORK 05 -->
+        <article class="art-item">
+          <div class="art-frame"><img src="assets/art-05.webp" alt="Artwork 05"></div>
+          <div class="art-caption">
+            <div class="art-title" data-art-title="5">UNTITLED 05</div>
+            <div class="art-medium" data-art-medium="5">Oil on canvas, 50 × 70 cm</div>
+          </div>
+        </article>
+
+        <!-- ARTWORK 06 -->
+        <article class="art-item">
+          <div class="art-frame"><img src="assets/art-06.webp" alt="Artwork 06"></div>
+          <div class="art-caption">
+            <div class="art-title" data-art-title="6">UNTITLED 06</div>
+            <div class="art-medium" data-art-medium="6">Ink on paper</div>
+          </div>
+        </article>
+
+        <!-- ARTWORK 07 -->
+        <article class="art-item">
+          <div class="art-frame"><img src="assets/art-07.webp" alt="Artwork 07"></div>
+          <div class="art-caption">
+            <div class="art-title" data-art-title="7">UNTITLED 07</div>
+            <div class="art-medium" data-art-medium="7">Oil on canvas, 50 × 70 cm</div>
+          </div>
+        </article>
+
+        <!-- ARTWORK 08 -->
+        <article class="art-item">
+          <div class="art-frame"><img src="assets/art-08.webp" alt="Artwork 08"></div>
+          <div class="art-caption">
+            <div class="art-title" data-art-title="8">UNTITLED 08</div>
+            <div class="art-medium" data-art-medium="8">Pencil on paper</div>
+          </div>
+        </article>
+
+        <!-- ARTWORK 09 -->
+        <article class="art-item">
+          <div class="art-frame"><img src="assets/art-09.webp" alt="Artwork 09"></div>
+          <div class="art-caption">
+            <div class="art-title" data-art-title="9">UNTITLED 09</div>
+            <div class="art-medium" data-art-medium="9">Digital painting</div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -354,6 +445,35 @@
     updateHeaderState();
     window.addEventListener('scroll', updateHeaderState, { passive: true });
     window.addEventListener('resize', updateHeaderState);
+  </script>
+
+
+  <!--
+    ============================================
+    EDIT ARTWORK TITLES & MEDIUMS HERE
+    You only need to edit the text inside quotes.
+    ============================================
+  -->
+  <script>
+    const artworks = [
+      { title: "UNTITLED 01", medium: "Oil on canvas, 50 × 70 cm" },
+      { title: "UNTITLED 02", medium: "Oil on canvas, 50 × 70 cm" },
+      { title: "UNTITLED 03", medium: "Oil on canvas, 50 × 70 cm" },
+      { title: "UNTITLED 04", medium: "Digital painting" },
+      { title: "UNTITLED 05", medium: "Oil on canvas, 50 × 70 cm" },
+      { title: "UNTITLED 06", medium: "Ink on paper" },
+      { title: "UNTITLED 07", medium: "Oil on canvas, 50 × 70 cm" },
+      { title: "UNTITLED 08", medium: "Pencil on paper" },
+      { title: "UNTITLED 09", medium: "Digital painting" }
+    ];
+
+    artworks.forEach((artwork, index) => {
+      const number = index + 1;
+      const title = document.querySelector(`[data-art-title="${number}"]`);
+      const medium = document.querySelector(`[data-art-medium="${number}"]`);
+      if (title) title.textContent = artwork.title;
+      if (medium) medium.textContent = artwork.medium;
+    });
   </script>
 
 </body>
