@@ -11,10 +11,9 @@
   <style>
     :root{
       --bg:#f3f0e8;
-      --paper:#f8f6f1;
       --ink:#3f3f3b;
       --muted:#8a867f;
-      --line:rgba(17,17,15,.15);
+      --line:rgba(63,63,59,.16);
       --pad:clamp(22px,3vw,48px);
     }
     *{box-sizing:border-box}
@@ -38,23 +37,15 @@
       backdrop-filter:blur(12px);
       border-bottom:1px solid var(--line)
     }
-    .brand{
-      font-size:10px;
-      letter-spacing:.26em;
-      text-transform:uppercase
-    }
-    .back{
-      font-size:9px;
-      letter-spacing:.18em;
-      text-transform:uppercase
-    }
+    .brand{font-size:10px;letter-spacing:.26em;text-transform:uppercase}
+    .back{font-size:9px;letter-spacing:.18em;text-transform:uppercase}
     main{padding:72px var(--pad) 100px}
     .intro{
       display:grid;
       grid-template-columns:1.1fr .9fr;
       gap:60px;
       align-items:end;
-      margin-bottom:64px
+      margin-bottom:54px
     }
     .kicker{
       font-size:9px;
@@ -77,17 +68,14 @@
       justify-self:end;
       font-size:14px;
       line-height:1.6;
-      color:#35332f
+      color:#5a5751
     }
-    .reel{
+    .reels-grid{
       display:grid;
-      grid-template-columns:minmax(0,1.45fr) minmax(250px,.55fr);
-      gap:26px;
-      align-items:end;
-      padding:34px 0 54px;
-      border-top:1px solid var(--line)
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:18px
     }
-    .reel:first-of-type{border-top:0;padding-top:0}
+    .reel-card{display:block}
     .thumb{
       position:relative;
       border-radius:18px;
@@ -100,58 +88,45 @@
       height:100%;
       object-fit:cover;
       display:block;
-      transition:transform .6s ease,filter .4s ease
+      transition:transform .55s ease,filter .35s ease
     }
-    .thumb:hover img{transform:scale(1.02);filter:brightness(.82)}
+    .reel-card:hover .thumb img{
+      transform:scale(1.02);
+      filter:brightness(.82)
+    }
     .play{
       position:absolute;
-      left:22px;
-      bottom:22px;
-      width:42px;
-      height:42px;
-      border:1px solid rgba(255,255,255,.85);
+      left:16px;
+      bottom:16px;
+      width:38px;
+      height:38px;
+      border:1px solid rgba(255,255,255,.9);
       border-radius:50%;
       display:grid;
       place-items:center;
       color:white;
-      font-size:12px;
+      font-size:11px;
       padding-left:2px
     }
-    .reel h2{
-      margin:0 0 10px;
+    .reel-meta{padding-top:12px}
+    .reel-meta h2{
+      margin:0 0 5px;
       color:#2f2f2c;
       font-family:"Montserrat","Helvetica Neue",Arial,sans-serif;
-      font-size:clamp(28px,3vw,48px);
+      font-size:18px;
       font-weight:300;
       letter-spacing:.08em
     }
-    .reel p{
+    .reel-meta p{
       margin:0;
       color:var(--muted);
-      font-size:13px;
-      line-height:1.55
-    }
-    .tag{
-      display:inline-block;
-      margin-top:18px;
-      font-size:9px;
-      letter-spacing:.18em;
-      text-transform:uppercase;
-      border-bottom:1px solid currentColor;
-      padding-bottom:4px
-    }
-    .note{
-      margin-top:40px;
-      border-top:1px solid var(--line);
-      padding-top:20px;
-      color:var(--muted);
-      font-size:12px;
-      line-height:1.6;
-      max-width:620px
+      font-size:11px;
+      line-height:1.45
     }
     @media (max-width:850px){
-      .intro,.reel{grid-template-columns:1fr}
+      .intro{grid-template-columns:1fr}
       .intro p{justify-self:start}
+      .reels-grid{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -167,48 +142,43 @@
         <div class="kicker">Selected reels</div>
         <h1>SHOWREELS</h1>
       </div>
-      <p>Three focused reels covering directing, animation and VFX / online work. The final videos can be linked from YouTube or Vimeo later without changing this layout.</p>
+      <p>Three focused reels covering directing, animation and VFX / online work.</p>
     </section>
 
-    <section class="reel">
-      <a class="thumb" href="#" aria-label="Directing showreel">
-        <img src="assets/film-06.webp" alt="Directing showreel">
-        <span class="play">▶</span>
+    <section class="reels-grid">
+      <a class="reel-card" href="reels/directing.html">
+        <div class="thumb">
+          <img src="assets/film-06.webp" alt="Directing showreel">
+          <span class="play">▶</span>
+        </div>
+        <div class="reel-meta">
+          <h2>DIRECTING</h2>
+          <p>Short films, commercials, music videos and visual storytelling.</p>
+        </div>
       </a>
-      <div>
-        <h2>DIRECTING</h2>
-        <p>Selected directing work across short films, commercials, music videos and visual storytelling.</p>
-        <a class="tag" href="#">Watch reel</a>
-      </div>
-    </section>
 
-    <section class="reel">
-      <a class="thumb" href="#" aria-label="Animation showreel">
-        <img src="assets/film-09.webp" alt="Animation showreel">
-        <span class="play">▶</span>
+      <a class="reel-card" href="reels/animation.html">
+        <div class="thumb">
+          <img src="assets/film-09.webp" alt="Animation showreel">
+          <span class="play">▶</span>
+        </div>
+        <div class="reel-meta">
+          <h2>ANIMATION</h2>
+          <p>2D animation, motion design and character-driven work.</p>
+        </div>
       </a>
-      <div>
-        <h2>ANIMATION</h2>
-        <p>Selected 2D animation, motion design and character-driven visual work.</p>
-        <a class="tag" href="#">Watch reel</a>
-      </div>
-    </section>
 
-    <section class="reel">
-      <a class="thumb" href="#" aria-label="VFX and online showreel">
-        <img src="assets/film-01.webp" alt="VFX and online showreel">
-        <span class="play">▶</span>
+      <a class="reel-card" href="reels/vfx-online.html">
+        <div class="thumb">
+          <img src="assets/film-01.webp" alt="VFX and online showreel">
+          <span class="play">▶</span>
+        </div>
+        <div class="reel-meta">
+          <h2>VFX / ONLINE</h2>
+          <p>Compositing, online finishing and visual effects work.</p>
+        </div>
       </a>
-      <div>
-        <h2>VFX / ONLINE</h2>
-        <p>Selected compositing, finishing, online and visual effects work.</p>
-        <a class="tag" href="#">Watch reel</a>
-      </div>
     </section>
-
-    <div class="note">
-      The three reel links are placeholders for now. When you send the YouTube or Vimeo links, we can make the thumbnails open the correct video or embed each reel directly on this page.
-    </div>
   </main>
 </body>
 </html>

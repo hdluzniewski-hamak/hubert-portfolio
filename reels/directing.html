@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIRECTING Showreel — Hubert Dłużniewski</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=Montserrat:wght@300;400&display=swap&subset=latin-ext" rel="stylesheet">
+  <style>
+    :root{--bg:#f3f0e8;--ink:#3f3f3b;--muted:#8a867f;--line:rgba(63,63,59,.16);--pad:clamp(22px,3vw,48px)}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter Tight","Segoe UI",Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .top{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:16px var(--pad);background:rgba(243,240,232,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .brand{font-size:10px;letter-spacing:.26em;text-transform:uppercase}
+    .back{font-size:9px;letter-spacing:.18em;text-transform:uppercase}
+    main{padding:72px var(--pad) 100px}
+    .kicker{font-size:9px;letter-spacing:.24em;text-transform:uppercase;margin-bottom:14px}
+    h1{margin:0 0 36px;font-family:"Montserrat","Helvetica Neue",Arial,sans-serif;font-size:clamp(50px,7vw,112px);line-height:.9;font-weight:300;letter-spacing:.1em;color:#2f2f2c}
+    .player{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#d9d6cf}
+    .placeholder{position:absolute;inset:0;background:url("../assets/film-06.webp") center/cover no-repeat}
+    .shade{position:absolute;inset:0;background:rgba(0,0,0,.22)}
+    .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:62px;height:62px;border:1px solid rgba(255,255,255,.95);border-radius:50%;display:grid;place-items:center;color:white;font-size:17px;padding-left:3px}
+    .meta{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding-top:24px}
+    .meta p{margin:0;font-size:13px;line-height:1.6;color:#5f5c56}
+    @media(max-width:800px){.meta{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="../index.html">Hubert Dłużniewski</a>
+    <a class="back" href="../showreels.html">← Showreels</a>
+  </header>
+  <main>
+    <div class="kicker">Showreel</div>
+    <h1>DIRECTING</h1>
+    <section class="player">
+      <div class="placeholder"></div>
+      <div class="shade"></div>
+      <div class="play">▶</div>
+    </section>
+    <section class="meta">
+      <p>Selected directing work across short films, commercials, music videos and visual storytelling.</p>
+      <p>Video link placeholder — YouTube or Vimeo can be embedded here later.</p>
+    </section>
+  </main>
+</body>
+</html>
