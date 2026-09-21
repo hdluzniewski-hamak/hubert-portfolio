@@ -6,7 +6,7 @@
   <title>Hubert Dłużniewski — Visual Creator</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Inter+Tight:wght@400;500&display=swap&subset=latin-ext" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=Montserrat:wght@300;400&display=swap&subset=latin-ext" rel="stylesheet">
   <meta name="description" content="Hubert Dłużniewski — director, animator, visual creator and artist. Selected film, animation, VFX and art.">
   <style>
     :root{
@@ -25,33 +25,39 @@
     .top{
       position:fixed;z-index:20;top:0;left:0;right:0;
       display:flex;justify-content:space-between;align-items:center;
-      padding:17px var(--pad);
-      background:rgba(243,240,232,.78);
+      padding:16px var(--pad);
+      background:transparent;
+      border-bottom:1px solid transparent;
+      transition:background .28s ease,border-color .28s ease,backdrop-filter .28s ease
+    }
+    .top.is-scrolled{
+      background:rgba(243,240,232,.84);
       backdrop-filter:blur(12px);
-      border-bottom:1px solid var(--line)
+      border-bottom-color:var(--line)
     }
     .brand{
-      font-size:11px;
-      letter-spacing:.22em;
+      font-family:"Inter Tight","Segoe UI",Arial,sans-serif;
+      font-size:10px;
+      letter-spacing:.26em;
       text-transform:uppercase;
       opacity:0;
-      transform:translateY(-6px);
+      transform:translateY(-5px);
       pointer-events:none;
-      transition:opacity .25s ease,transform .25s ease
+      transition:opacity .24s ease,transform .24s ease
     }
     .brand.is-visible{
       opacity:1;
       transform:translateY(0);
       pointer-events:auto
     }
-    .nav{display:flex;gap:27px;font-size:10px;letter-spacing:.17em;text-transform:uppercase}
+    .nav{display:flex;gap:24px;font-size:9px;letter-spacing:.19em;text-transform:uppercase}
     .nav a{position:relative}
     .nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:1px;background:currentColor;transition:.25s}
     .nav a:hover:after{right:0}
 
     .hero{
       min-height:100vh;
-      padding:92px var(--pad) 34px;
+      padding:88px var(--pad) 30px;
       position:relative;
       overflow:hidden;
       isolation:isolate;
@@ -70,55 +76,52 @@
       position:absolute;
       inset:0;
       z-index:-2;
-      background:
-        linear-gradient(90deg,rgba(243,240,232,.38) 0%,rgba(243,240,232,.24) 34%,rgba(243,240,232,.08) 62%,rgba(243,240,232,0) 100%),
-        linear-gradient(180deg,rgba(243,240,232,.10),rgba(243,240,232,.03))
+      background:linear-gradient(90deg,rgba(244,241,234,.20) 0%,rgba(244,241,234,.10) 34%,rgba(244,241,234,.02) 62%,rgba(244,241,234,0) 100%)
     }
     .hero-copy{
-      width:min(640px,52vw);
+      width:min(650px,54vw);
       position:relative;
       z-index:2;
       color:#11110f;
-      text-shadow:none;
       margin-top:-1vh
     }
     .eyebrow,.kicker{
       font-family:"Inter Tight","Segoe UI",Arial,sans-serif;
       font-size:9px;
-      letter-spacing:.23em;
+      letter-spacing:.24em;
       text-transform:uppercase
     }
     h1{
-      margin:12px 0 7px;
-      font-family:"Cormorant Garamond",Georgia,serif;
-      font-size:clamp(50px,4.9vw,88px);
-      line-height:.90;
-      font-weight:400;
-      letter-spacing:.08em;
+      margin:13px 0 8px;
+      font-family:"Montserrat","Helvetica Neue",Arial,sans-serif;
+      font-size:clamp(48px,4.35vw,82px);
+      line-height:.98;
+      font-weight:300;
+      letter-spacing:.19em;
       max-width:100%
     }
     .hero-role{
-      margin-top:8px;
+      margin-top:7px;
       font-family:"Inter Tight","Segoe UI",Arial,sans-serif;
       font-size:9px;
-      letter-spacing:.22em;
+      letter-spacing:.21em;
       text-transform:uppercase
     }
     .lead{display:none}
     .showreel{
       display:inline-flex;
       align-items:center;
-      gap:14px;
+      gap:13px;
       margin-top:34px;
       font-family:"Inter Tight","Segoe UI",Arial,sans-serif;
       font-size:9px;
       font-weight:500;
-      letter-spacing:.13em;
+      letter-spacing:.10em;
       text-transform:uppercase
     }
     .showreel-icon{
-      width:30px;
-      height:30px;
+      width:32px;
+      height:32px;
       border:1px solid currentColor;
       border-radius:50%;
       display:grid;
@@ -129,24 +132,22 @@
     .hero-note{
       position:absolute;
       left:var(--pad);
-      bottom:24px;
+      bottom:23px;
       z-index:2;
-      font-family:"Cormorant Garamond",Georgia,serif;
-      font-size:13px;
-      line-height:1.05;
-      letter-spacing:.01em
+      font-family:"Inter Tight","Segoe UI",Arial,sans-serif;
+      font-size:9px;
+      line-height:1.25;
+      letter-spacing:.02em
     }
     .scroll-note{
       position:absolute;
       right:var(--pad);
-      bottom:24px;
+      bottom:23px;
       z-index:2;
       font-family:"Inter Tight","Segoe UI",Arial,sans-serif;
       font-size:8px;
-      letter-spacing:.18em;
-      text-transform:uppercase;
-      writing-mode:vertical-rl;
-      transform:rotate(180deg)
+      letter-spacing:.17em;
+      text-transform:uppercase
     }
     .hero-media{display:none}
     .scroll{display:none}
@@ -210,10 +211,10 @@
 
     @media (max-width:900px){
       .nav{gap:16px}
-      .hero{min-height:86vh;padding-top:96px}
-      .hero-copy{width:min(600px,68vw)}
+      .hero{min-height:86vh;padding-top:90px}
+      .hero-copy{width:min(590px,72vw)}
       .hero::after{
-        background:linear-gradient(90deg,rgba(243,240,232,.46) 0%,rgba(243,240,232,.24) 62%,rgba(243,240,232,.05) 100%)
+        background:linear-gradient(90deg,rgba(244,241,234,.28) 0%,rgba(244,241,234,.12) 62%,rgba(244,241,234,.02) 100%)
       }
       .section-head{grid-template-columns:1fr}
       .section-intro{justify-self:start}
@@ -229,16 +230,16 @@
       .nav{gap:12px;font-size:9px}
       .hero,section{padding-left:18px;padding-right:18px}
       .hero{padding-top:90px}
-      h1{font-size:clamp(44px,13vw,68px);line-height:.94;letter-spacing:.06em}
+      h1{font-size:clamp(42px,12vw,64px);line-height:1.00;letter-spacing:.13em}
       .hero{
         min-height:78vh;
         padding-left:18px;
         padding-right:18px
       }
-      .hero-copy{width:82vw}
+      .hero-copy{width:88vw}
       .hero::before{background-position:center center}
       .hero::after{
-        background:linear-gradient(90deg,rgba(243,240,232,.52) 0%,rgba(243,240,232,.30) 72%,rgba(243,240,232,.08) 100%)
+        background:linear-gradient(90deg,rgba(244,241,234,.36) 0%,rgba(244,241,234,.18) 72%,rgba(244,241,234,.04) 100%)
       }
       .hero-note{left:18px}
       .scroll-note{right:18px}
@@ -341,15 +342,18 @@
   <script>
     const hero = document.querySelector('.hero');
     const brand = document.querySelector('.brand');
+    const topbar = document.querySelector('.top');
 
-    const updateBrandVisibility = () => {
+    const updateHeaderState = () => {
       const heroBottom = hero.getBoundingClientRect().bottom;
-      brand.classList.toggle('is-visible', heroBottom <= 86);
+      const pastHero = heroBottom <= 86;
+      brand.classList.toggle('is-visible', pastHero);
+      topbar.classList.toggle('is-scrolled', pastHero);
     };
 
-    updateBrandVisibility();
-    window.addEventListener('scroll', updateBrandVisibility, { passive: true });
-    window.addEventListener('resize', updateBrandVisibility);
+    updateHeaderState();
+    window.addEventListener('scroll', updateHeaderState, { passive: true });
+    window.addEventListener('resize', updateHeaderState);
   </script>
 
 </body>
