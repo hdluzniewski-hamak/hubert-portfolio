@@ -1,138 +1,218 @@
-<!DOCTYPE html>
-<html lang="pl">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hubert Dłużniewski — Visual Creator</title>
-
+  <meta name="description" content="Hubert Dłużniewski — director, animator, visual creator and artist. Selected film, animation, VFX and art.">
   <style>
-    * {
-      box-sizing: border-box;
+    :root{
+      --bg:#f3f0e8;
+      --paper:#f8f6f1;
+      --ink:#11110f;
+      --muted:#77736b;
+      --line:rgba(17,17,15,.15);
+      --pad:clamp(22px,3vw,48px);
     }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f0e8;
-      color: #111;
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit;text-decoration:none}
+    img{display:block;width:100%;height:100%;object-fit:cover}
+    .top{
+      position:fixed;z-index:20;top:0;left:0;right:0;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:20px var(--pad);
+      background:rgba(243,240,232,.86);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line)
     }
+    .brand{font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+    .nav{display:flex;gap:30px;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+    .nav a{position:relative}
+    .nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-5px;height:1px;background:currentColor;transition:.25s}
+    .nav a:hover:after{right:0}
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 24px 40px;
-      border-bottom: 1px solid rgba(0,0,0,0.15);
+    .hero{
+      min-height:100vh;
+      padding:110px var(--pad) var(--pad);
+      display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.5fr);
+      gap:clamp(28px,4vw,70px);align-items:end
     }
-
-    .logo {
-      font-size: 14px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
+    .hero-copy{padding-bottom:2vh}
+    .eyebrow,.kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+    h1{
+      margin:20px 0 26px;font-size:clamp(58px,7.6vw,140px);
+      line-height:.86;font-weight:400;letter-spacing:-.055em
     }
+    .lead{max-width:520px;font-size:16px;line-height:1.5}
+    .hero-media{height:min(78vh,860px);overflow:hidden}
+    .hero-media img{object-position:center center}
+    .scroll{display:inline-block;margin-top:34px;border-bottom:1px solid;padding-bottom:4px;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
 
-    nav a {
-      color: #111;
-      text-decoration: none;
-      margin-left: 28px;
-      font-size: 13px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    section{padding:100px var(--pad)}
+    .section-head{
+      display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;
+      margin-bottom:38px
     }
+    .section-title{margin:0;font-size:clamp(44px,6vw,90px);font-weight:400;letter-spacing:-.04em}
+    .section-intro{max-width:500px;justify-self:end;font-size:14px;line-height:1.5;color:#2a2926}
 
-    .hero {
-      min-height: calc(100vh - 80px);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 60px 40px;
+    .film-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .card{position:relative;overflow:hidden;background:#ddd;aspect-ratio:16/9}
+    .card img{transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s}
+    .card:hover img{transform:scale(1.025);filter:brightness(.83)}
+    .overlay{
+      position:absolute;inset:auto 0 0 0;padding:22px;color:white;
+      display:flex;justify-content:space-between;align-items:end;
+      background:linear-gradient(transparent,rgba(0,0,0,.68))
     }
+    .overlay h3{margin:0 0 4px;font-size:19px;font-weight:400}
+    .overlay p{margin:0;font-size:11px;opacity:.8;letter-spacing:.06em;text-transform:uppercase}
 
-    .eyebrow {
-      font-size: 14px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      margin-bottom: 20px;
+    .art{background:var(--paper)}
+    .art-grid{
+      display:grid;grid-template-columns:repeat(12,1fr);gap:16px;
+      align-items:start
     }
+    .art-item{overflow:hidden;background:#e6e0d6}
+    .art-item img{height:auto;transition:transform .5s}
+    .art-item:hover img{transform:scale(1.015)}
+    .art-item:nth-child(1){grid-column:1/span 4}
+    .art-item:nth-child(2){grid-column:5/span 3;margin-top:90px}
+    .art-item:nth-child(3){grid-column:8/span 5}
+    .art-item:nth-child(4){grid-column:1/span 3;margin-top:20px}
+    .art-item:nth-child(5){grid-column:4/span 5;margin-top:-40px}
+    .art-item:nth-child(6){grid-column:9/span 4;margin-top:70px}
+    .art-item:nth-child(7){grid-column:1/span 5}
+    .art-item:nth-child(8){grid-column:6/span 3;margin-top:100px}
+    .art-item:nth-child(9){grid-column:9/span 4}
 
-    h1 {
-      font-size: clamp(54px, 9vw, 130px);
-      line-height: 0.92;
-      font-weight: 400;
-      margin: 0;
-      letter-spacing: -0.03em;
+    .about{
+      display:grid;grid-template-columns:1.15fr .85fr;gap:80px;
+      border-top:1px solid var(--line)
     }
+    .about h2{font-size:clamp(42px,5vw,74px);font-weight:400;line-height:1.02;margin:12px 0 30px;letter-spacing:-.04em}
+    .about p{font-size:16px;line-height:1.65;max-width:650px}
+    .about-side{align-self:end;border-top:1px solid var(--line);padding-top:20px;font-size:13px;line-height:1.8;color:#393733}
 
-    .sub {
-      margin-top: 30px;
-      font-size: 18px;
-      max-width: 600px;
-      line-height: 1.5;
+    footer{
+      padding:70px var(--pad) 40px;border-top:1px solid var(--line);
+      display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end
     }
+    .contact-big{font-size:clamp(42px,6vw,88px);letter-spacing:-.045em;line-height:.95}
+    .contact-links{font-size:13px;line-height:2}
 
-    .cta {
-      margin-top: 40px;
-      display: inline-block;
-      width: fit-content;
-      color: #111;
-      text-decoration: none;
-      border-bottom: 1px solid #111;
-      padding-bottom: 4px;
-      font-size: 14px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+    @media (max-width:900px){
+      .nav{gap:16px}
+      .hero{grid-template-columns:1fr;padding-top:105px;min-height:auto}
+      .hero-media{height:58vh}
+      .section-head{grid-template-columns:1fr}
+      .section-intro{justify-self:start}
+      .film-grid{grid-template-columns:1fr}
+      .art-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+      .art-item,.art-item:nth-child(n){grid-column:auto;margin-top:0}
+      .about{grid-template-columns:1fr;gap:40px}
+      footer{grid-template-columns:1fr}
     }
-
-    @media (max-width: 700px) {
-      header {
-        padding: 20px;
-      }
-
-      nav {
-        display: none;
-      }
-
-      .hero {
-        padding: 40px 20px;
-      }
-
-      .sub {
-        font-size: 16px;
-      }
+    @media (max-width:620px){
+      .top{padding:18px 18px}
+      .brand{font-size:10px}
+      .nav{gap:12px;font-size:9px}
+      .hero,section{padding-left:18px;padding-right:18px}
+      .hero{padding-top:90px}
+      h1{font-size:clamp(48px,16vw,82px)}
+      .hero-media{height:48vh}
+      section{padding-top:72px;padding-bottom:72px}
+      .art-grid{grid-template-columns:1fr}
     }
   </style>
 </head>
-
 <body>
-
-  <header>
-    <div class="logo">Hubert Dłużniewski</div>
-
-    <nav>
-      <a href="#">Film</a>
-      <a href="#">Art</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+  <header class="top">
+    <a class="brand" href="#home">Hubert Dłużniewski</a>
+    <nav class="nav">
+      <a href="#film">Film</a>
+      <a href="#art">Art</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main class="hero">
-    <div class="eyebrow">Visual Creator</div>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">Visual creator</div>
+        <h1>HUBERT<br>DŁUŻNIEWSKI</h1>
+        <div class="lead">Director, animator, painter and visual artist working across film, animation, VFX and traditional art.</div>
+        <a class="scroll" href="#film">View selected work</a>
+      </div>
+      <div class="hero-media"><img src="assets/hero.webp" alt="Selected work by Hubert Dłużniewski"></div>
+    </section>
 
-    <h1>
-      HUBERT<br>
-      DŁUŻNIEWSKI
-    </h1>
+    <section id="film">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Selected work</div>
+          <h2 class="section-title">FILM</h2>
+        </div>
+        <div class="section-intro">Selected film, animation, VFX and visual storytelling projects.</div>
+      </div>
+      <div class="film-grid">
+        <a class="card" href="#"><img src="assets/film-01.webp" alt=""><div class="overlay"><div><h3>Selected Project 01</h3><p>Film / VFX</p></div><span>↗</span></div></a>
+        <a class="card" href="#"><img src="assets/film-02.webp" alt=""><div class="overlay"><div><h3>Selected Project 02</h3><p>Film</p></div><span>↗</span></div></a>
+        <a class="card" href="#"><img src="assets/film-03.webp" alt=""><div class="overlay"><div><h3>Selected Project 03</h3><p>Direction</p></div><span>↗</span></div></a>
+        <a class="card" href="#"><img src="assets/film-04.webp" alt=""><div class="overlay"><div><h3>Selected Project 04</h3><p>Animation</p></div><span>↗</span></div></a>
+        <a class="card" href="#"><img src="assets/film-05.webp" alt=""><div class="overlay"><div><h3>Selected Project 05</h3><p>Animation</p></div><span>↗</span></div></a>
+        <a class="card" href="#"><img src="assets/film-06.webp" alt=""><div class="overlay"><div><h3>Selected Project 06</h3><p>Direction</p></div><span>↗</span></div></a>
+        <a class="card" href="#"><img src="assets/film-07.webp" alt=""><div class="overlay"><div><h3>Selected Project 07</h3><p>Film</p></div><span>↗</span></div></a>
+        <a class="card" href="#"><img src="assets/film-08.webp" alt=""><div class="overlay"><div><h3>Selected Project 08</h3><p>Animation</p></div><span>↗</span></div></a>
+        <a class="card" href="#"><img src="assets/film-09.webp" alt=""><div class="overlay"><div><h3>Selected Project 09</h3><p>Animation</p></div><span>↗</span></div></a>
+      </div>
+    </section>
 
-    <div class="sub">
-      Director, animator, painter and visual artist working across film,
-      animation, VFX and traditional art.
-    </div>
+    <section id="art" class="art">
+      <div class="section-head">
+        <div>
+          <div class="kicker">Paintings / drawings / visual explorations</div>
+          <h2 class="section-title">ART</h2>
+        </div>
+        <div class="section-intro">A different way of telling the same stories.</div>
+      </div>
+      <div class="art-grid">
+        <div class="art-item"><img src="assets/art-01.webp" alt=""></div>
+        <div class="art-item"><img src="assets/art-02.webp" alt=""></div>
+        <div class="art-item"><img src="assets/art-03.webp" alt=""></div>
+        <div class="art-item"><img src="assets/art-04.webp" alt=""></div>
+        <div class="art-item"><img src="assets/art-05.webp" alt=""></div>
+        <div class="art-item"><img src="assets/art-06.webp" alt=""></div>
+        <div class="art-item"><img src="assets/art-07.webp" alt=""></div>
+        <div class="art-item"><img src="assets/art-08.webp" alt=""></div>
+        <div class="art-item"><img src="assets/art-09.webp" alt=""></div>
+      </div>
+    </section>
 
-    <a class="cta" href="#">
-      View selected work
-    </a>
+    <section class="about" id="about">
+      <div>
+        <div class="kicker">About</div>
+        <h2>Visual creator — painter, animator, writer and director.</h2>
+        <p>I work with image, animation and storytelling as equal means of expression. I direct short visual stories combining film, animation and emerging technologies, while developing original narratives driven by character, emotion and atmosphere.</p>
+      </div>
+      <div class="about-side">
+        Warsaw, Poland<br>
+        Film / Animation / VFX / Art<br>
+        Available for selected collaborations
+      </div>
+    </section>
   </main>
 
+  <footer id="contact">
+    <div class="contact-big">LET'S CREATE<br>SOMETHING INTERESTING.</div>
+    <div class="contact-links">
+      <a href="mailto:hello@hubertdluzniewski.com">Email ↗</a><br>
+      <a href="#">Instagram ↗</a><br>
+      <a href="#">LinkedIn ↗</a>
+    </div>
+  </footer>
 </body>
 </html>
