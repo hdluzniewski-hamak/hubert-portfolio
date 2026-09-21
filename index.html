@@ -231,13 +231,39 @@
     }
 
     .about{
-      display:grid;grid-template-columns:1.15fr .85fr;gap:80px;
+      display:grid;
+      grid-template-columns:minmax(220px,.72fr) minmax(0,1.45fr) minmax(180px,.55fr);
+      gap:clamp(34px,4vw,72px);
+      align-items:start;
       border-top:1px solid var(--line)
     }
-    .about h2{font-size:clamp(42px,5vw,74px);font-weight:400;line-height:1.02;margin:12px 0 30px;letter-spacing:-.04em}
-    .about p{font-size:16px;line-height:1.65;max-width:720px;margin:0 0 18px}
+    .about-photo{
+      position:sticky;
+      top:92px
+    }
+    .about-photo img{
+      display:block;
+      width:100%;
+      height:auto;
+      object-fit:cover
+    }
+    .about-copy h2{
+      font-size:clamp(42px,5vw,74px);
+      font-weight:400;
+      line-height:1.02;
+      margin:12px 0 30px;
+      letter-spacing:-.04em
+    }
+    .about p{font-size:16px;line-height:1.65;max-width:760px;margin:0 0 18px}
     .about p:last-child{margin-bottom:0}
-    .about-side{align-self:end;border-top:1px solid var(--line);padding-top:20px;font-size:13px;line-height:1.8;color:#393733}
+    .about-side{
+      align-self:end;
+      border-top:1px solid var(--line);
+      padding-top:20px;
+      font-size:13px;
+      line-height:1.8;
+      color:#393733
+    }
 
     footer{
       padding:70px var(--pad) 40px;border-top:1px solid var(--line);
@@ -259,6 +285,7 @@
       .art-grid{columns:2;column-gap:10px}
       .art-item{margin-bottom:10px}
       .about{grid-template-columns:1fr;gap:40px}
+      .about-photo{position:static;max-width:440px}
       footer{grid-template-columns:1fr}
     }
     @media (max-width:620px){
@@ -338,15 +365,21 @@
     </section>
 
     <section class="about" id="about">
-      <div>
+      <div class="about-photo">
+        <img src="assets/about-hubert.webp" alt="Hubert Dłużniewski">
+      </div>
+
+      <div class="about-copy">
         <div class="kicker">About</div>
         <h2>Visual creator — painter, animator, writer and director.</h2>
+
         <p>I’m a visual creator — a painter, animator, writer and director, working with image, animation and storytelling as equal means of expression. I direct short visual stories combining film, animation and emerging technologies. I develop original narratives and scripts, often building short stories around my artwork, driven by character, emotion and atmosphere.</p>
 
         <p>With over twenty years of experience in the industry, I’ve worked on film, advertising and television projects, creating visual identities, animations and theatrical visuals. Projects I’ve collaborated on, as well as my original work, have been nominated and awarded at Polish and international industry competitions.</p>
 
         <p>I love my work and the constant search for new challenges. Everything I create begins with storytelling — the quiet moment that makes us stop, the spark that draws us in, and the current that carries us away.</p>
       </div>
+
       <div class="about-side">
         Warsaw, Poland<br>
         Film / Animation / VFX / Art<br>
