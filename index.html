@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hubert Dłużniewski — Visual Creator</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f0e8;
+      color: #111;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 40px;
+      border-bottom: 1px solid rgba(0,0,0,0.15);
+    }
+
+    .logo {
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      color: #111;
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 40px;
+    }
+
+    .eyebrow {
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(54px, 9vw, 130px);
+      line-height: 0.92;
+      font-weight: 400;
+      margin: 0;
+      letter-spacing: -0.03em;
+    }
+
+    .sub {
+      margin-top: 30px;
+      font-size: 18px;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+
+    .cta {
+      margin-top: 40px;
+      display: inline-block;
+      width: fit-content;
+      color: #111;
+      text-decoration: none;
+      border-bottom: 1px solid #111;
+      padding-bottom: 4px;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 20px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 40px 20px;
+      }
+
+      .sub {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Hubert Dłużniewski</div>
+
+    <nav>
+      <a href="#">Film</a>
+      <a href="#">Art</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="eyebrow">Visual Creator</div>
+
+    <h1>
+      HUBERT<br>
+      DŁUŻNIEWSKI
+    </h1>
+
+    <div class="sub">
+      Director, animator, painter and visual artist working across film,
+      animation, VFX and traditional art.
+    </div>
+
+    <a class="cta" href="#">
+      View selected work
+    </a>
+  </main>
+
+</body>
+</html>
