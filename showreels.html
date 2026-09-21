@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Showreels — Hubert Dłużniewski</title>
+  <meta name="description" content="Directing, animation and VFX / online showreels by Hubert Dłużniewski.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=Montserrat:wght@300;400&display=swap&subset=latin-ext" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f3f0e8;
+      --paper:#f8f6f1;
+      --ink:#3f3f3b;
+      --muted:#8a867f;
+      --line:rgba(17,17,15,.15);
+      --pad:clamp(22px,3vw,48px);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:"Inter Tight","Segoe UI",Arial,sans-serif
+    }
+    a{color:inherit;text-decoration:none}
+    .top{
+      position:sticky;
+      top:0;
+      z-index:20;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:16px var(--pad);
+      background:rgba(243,240,232,.88);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line)
+    }
+    .brand{
+      font-size:10px;
+      letter-spacing:.26em;
+      text-transform:uppercase
+    }
+    .back{
+      font-size:9px;
+      letter-spacing:.18em;
+      text-transform:uppercase
+    }
+    main{padding:72px var(--pad) 100px}
+    .intro{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:60px;
+      align-items:end;
+      margin-bottom:64px
+    }
+    .kicker{
+      font-size:9px;
+      letter-spacing:.24em;
+      text-transform:uppercase;
+      margin-bottom:14px
+    }
+    h1{
+      margin:0;
+      color:#2f2f2c;
+      font-family:"Montserrat","Helvetica Neue",Arial,sans-serif;
+      font-size:clamp(54px,7vw,118px);
+      line-height:.9;
+      font-weight:300;
+      letter-spacing:.12em
+    }
+    .intro p{
+      margin:0;
+      max-width:460px;
+      justify-self:end;
+      font-size:14px;
+      line-height:1.6;
+      color:#35332f
+    }
+    .reel{
+      display:grid;
+      grid-template-columns:minmax(0,1.45fr) minmax(250px,.55fr);
+      gap:26px;
+      align-items:end;
+      padding:34px 0 54px;
+      border-top:1px solid var(--line)
+    }
+    .reel:first-of-type{border-top:0;padding-top:0}
+    .thumb{
+      position:relative;
+      border-radius:18px;
+      aspect-ratio:16/9;
+      overflow:hidden;
+      background:#ddd
+    }
+    .thumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      transition:transform .6s ease,filter .4s ease
+    }
+    .thumb:hover img{transform:scale(1.02);filter:brightness(.82)}
+    .play{
+      position:absolute;
+      left:22px;
+      bottom:22px;
+      width:42px;
+      height:42px;
+      border:1px solid rgba(255,255,255,.85);
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      color:white;
+      font-size:12px;
+      padding-left:2px
+    }
+    .reel h2{
+      margin:0 0 10px;
+      color:#2f2f2c;
+      font-family:"Montserrat","Helvetica Neue",Arial,sans-serif;
+      font-size:clamp(28px,3vw,48px);
+      font-weight:300;
+      letter-spacing:.08em
+    }
+    .reel p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.55
+    }
+    .tag{
+      display:inline-block;
+      margin-top:18px;
+      font-size:9px;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      border-bottom:1px solid currentColor;
+      padding-bottom:4px
+    }
+    .note{
+      margin-top:40px;
+      border-top:1px solid var(--line);
+      padding-top:20px;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.6;
+      max-width:620px
+    }
+    @media (max-width:850px){
+      .intro,.reel{grid-template-columns:1fr}
+      .intro p{justify-self:start}
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="index.html">Hubert Dłużniewski</a>
+    <a class="back" href="index.html">← Back home</a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div>
+        <div class="kicker">Selected reels</div>
+        <h1>SHOWREELS</h1>
+      </div>
+      <p>Three focused reels covering directing, animation and VFX / online work. The final videos can be linked from YouTube or Vimeo later without changing this layout.</p>
+    </section>
+
+    <section class="reel">
+      <a class="thumb" href="#" aria-label="Directing showreel">
+        <img src="assets/film-06.webp" alt="Directing showreel">
+        <span class="play">▶</span>
+      </a>
+      <div>
+        <h2>DIRECTING</h2>
+        <p>Selected directing work across short films, commercials, music videos and visual storytelling.</p>
+        <a class="tag" href="#">Watch reel</a>
+      </div>
+    </section>
+
+    <section class="reel">
+      <a class="thumb" href="#" aria-label="Animation showreel">
+        <img src="assets/film-09.webp" alt="Animation showreel">
+        <span class="play">▶</span>
+      </a>
+      <div>
+        <h2>ANIMATION</h2>
+        <p>Selected 2D animation, motion design and character-driven visual work.</p>
+        <a class="tag" href="#">Watch reel</a>
+      </div>
+    </section>
+
+    <section class="reel">
+      <a class="thumb" href="#" aria-label="VFX and online showreel">
+        <img src="assets/film-01.webp" alt="VFX and online showreel">
+        <span class="play">▶</span>
+      </a>
+      <div>
+        <h2>VFX / ONLINE</h2>
+        <p>Selected compositing, finishing, online and visual effects work.</p>
+        <a class="tag" href="#">Watch reel</a>
+      </div>
+    </section>
+
+    <div class="note">
+      The three reel links are placeholders for now. When you send the YouTube or Vimeo links, we can make the thumbnails open the correct video or embed each reel directly on this page.
+    </div>
+  </main>
+</body>
+</html>
