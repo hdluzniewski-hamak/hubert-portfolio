@@ -8,8 +8,8 @@
   <style>
     :root{
       --bg:#f3f0e8;
-      --ink:#11110f;
-      --muted:#77736b;
+      --ink:#3f3f3b;
+      --muted:#8a867f;
       --line:rgba(17,17,15,.15);
       --pad:clamp(22px,3vw,48px);
     }
@@ -49,6 +49,7 @@
     }
     .player{
       position:relative;
+      border-radius:18px;
       width:100%;
       aspect-ratio:16/9;
       background:#111;
@@ -91,7 +92,7 @@
       grid-template-columns:repeat(2,minmax(0,1fr));
       gap:12px
     }
-    .grid img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+    .grid img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px}
     .next{
       border-top:1px solid var(--line);
       padding:70px 0 90px;
