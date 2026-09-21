@@ -161,7 +161,7 @@
     .section-title{margin:0;font-size:clamp(44px,6vw,90px);font-weight:400;letter-spacing:-.04em;color:var(--heading)}
     .section-intro{max-width:500px;justify-self:end;font-size:14px;line-height:1.5;color:#2a2926}
 
-    .film-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .film-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
     .card{position:relative;overflow:hidden;background:#ddd;aspect-ratio:16/9;border-radius:18px}
 
     .card:nth-child(-n+4){aspect-ratio:16/9}
@@ -182,13 +182,13 @@
       transition:opacity .35s ease
     }
     .card:hover .overlay{opacity:0}
-    .overlay h3{margin:0 0 4px;font-size:19px;font-weight:400}
-    .overlay p{margin:0;font-size:11px;opacity:.8;letter-spacing:.06em;text-transform:uppercase}
+    .overlay h3{margin:0 0 4px;font-size:16px;font-weight:400}
+    .overlay p{margin:0;font-size:10px;opacity:.82;letter-spacing:.06em;text-transform:uppercase}
 
     .art{background:var(--paper)}
     .art-grid{
-      columns:3;
-      column-gap:18px
+      columns:4;
+      column-gap:16px
     }
     .art-item{
       position:relative;
@@ -285,7 +285,7 @@
       }
       .section-head{grid-template-columns:1fr}
       .section-intro{justify-self:start}
-      .film-grid{grid-template-columns:1fr}
+      .film-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
       .art-grid{columns:2;column-gap:10px}
       .art-item{margin-bottom:10px}
       .about{grid-template-columns:1fr;gap:40px}
@@ -312,6 +312,7 @@
       .hero-note{left:18px}
       .scroll-note{right:18px}
       section{padding-top:72px;padding-bottom:72px}
+      .film-grid{grid-template-columns:1fr}
       .art-grid{columns:1}
     }
   </style>
