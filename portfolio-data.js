@@ -14,7 +14,7 @@ window.PORTFOLIO_FILMS = [
     meta: "Direction / AI short film",
     year: "2026",
     description: "",
-    youtube: "",
+    youtube: "https://youtu.be/jMsma0EnTxQ",
     credits: [
       ["Direction", "Hubert Dłużniewski"]
     ],
