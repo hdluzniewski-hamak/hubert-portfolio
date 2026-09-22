@@ -27,5 +27,5 @@ window.PORTFOLIO_ART = [
   { image: "art-06.webp", title: "UNTITLED 06", medium: "Ink on paper" },
   { image: "art-07.webp", title: "UNTITLED 07", medium: "Oil on canvas, 50 x 70 cm" },
   { image: "art-08.webp", title: "UNTITLED 08", medium: "Pencil on paper" },
-  { image: "art-09.webp", title: "UNTITLED 09", medium: "Digital painting" }
+  { image: "art-09.webp", title: "SPARROW", medium: "Oil on canvas, 30 x 40 cm" }
 ];
