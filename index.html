@@ -424,80 +424,51 @@
 
 
 
-  <!--
-    PORTFOLIO CONTENT IS LOADED FROM:
-    films.txt
-    art.txt
-  -->
+  <!-- Portfolio content data -->
+  <script src="portfolio-data.js?v=26"></script>
+
   <script>
-    function parsePipeFile(text) {
-      return text
-        .split(/
-?
-/)
-        .map(line => line.trim())
-        .filter(line => line && !line.startsWith("#"))
-        .map(line => line.split("|").map(part => part.trim()));
-    }
+    const filmGrid = document.getElementById("filmGrid");
+    const films = window.PORTFOLIO_FILMS || [];
 
-    async function loadFilms() {
-      const response = await fetch("films.txt?v=25");
-      if (!response.ok) throw new Error("Could not load films.txt");
-      const rows = parsePipeFile(await response.text());
-      const filmGrid = document.getElementById("filmGrid");
-      filmGrid.innerHTML = "";
-
-      rows.forEach(([filename, title, meta, link = "#", position = "center"]) => {
-        const card = document.createElement("a");
-        card.className = "card";
-        card.href = link || "#";
-        card.innerHTML = `
-          <img src="assets/${filename}" alt="${title}" style="object-position:${position || "center"}">
-          <div class="overlay">
-            <div>
-              <h3>${title}</h3>
-              <p>${meta}</p>
-            </div>
-            <span>↗</span>
-          </div>`;
-        filmGrid.appendChild(card);
-      });
-    }
-
-    async function loadArt() {
-      const response = await fetch("art.txt?v=25");
-      if (!response.ok) throw new Error("Could not load art.txt");
-      const rows = parsePipeFile(await response.text());
-      const artGrid = document.getElementById("artGrid");
-      artGrid.innerHTML = "";
-
-      rows.forEach(([filename, title, medium]) => {
-        const item = document.createElement("article");
-        item.className = "art-item";
-        item.innerHTML = `
-          <img src="assets/${filename}" alt="${title}">
-          <div class="art-overlay">
-            <div class="art-title">${title}</div>
-            <div class="art-medium">${medium}</div>
-          </div>`;
-        artGrid.appendChild(item);
-      });
-    }
-
-    Promise.all([loadFilms(), loadArt()]).catch(error => {
-      console.error(error);
-
-      const filmGrid = document.getElementById("filmGrid");
-      const artGrid = document.getElementById("artGrid");
-
-      if (filmGrid && !filmGrid.children.length) {
-        filmGrid.innerHTML = '<p style="font-size:12px;color:#8a867f">Film data could not be loaded. Check films.txt in the root folder.</p>';
-      }
-
-      if (artGrid && !artGrid.children.length) {
-        artGrid.innerHTML = '<p style="font-size:12px;color:#8a867f">Art data could not be loaded. Check art.txt in the root folder.</p>';
-      }
+    films.forEach((film) => {
+      const card = document.createElement("a");
+      card.className = "card";
+      card.href = film.link || "#";
+      card.innerHTML = `
+        <img src="assets/${film.image}" alt="${film.title}" style="object-position:${film.position || "center"}">
+        <div class="overlay">
+          <div>
+            <h3>${film.title}</h3>
+            <p>${film.meta}</p>
+          </div>
+          <span>↗</span>
+        </div>`;
+      filmGrid.appendChild(card);
     });
+
+    const artGrid = document.getElementById("artGrid");
+    const artworks = window.PORTFOLIO_ART || [];
+
+    artworks.forEach((artwork) => {
+      const item = document.createElement("article");
+      item.className = "art-item";
+      item.innerHTML = `
+        <img src="assets/${artwork.image}" alt="${artwork.title}">
+        <div class="art-overlay">
+          <div class="art-title">${artwork.title}</div>
+          <div class="art-medium">${artwork.medium}</div>
+        </div>`;
+      artGrid.appendChild(item);
+    });
+
+    if (!films.length && filmGrid) {
+      filmGrid.innerHTML = '<p style="font-size:12px;color:#8a867f">No film data found. Check portfolio-data.js.</p>';
+    }
+
+    if (!artworks.length && artGrid) {
+      artGrid.innerHTML = '<p style="font-size:12px;color:#8a867f">No art data found. Check portfolio-data.js.</p>';
+    }
   </script>
 
 </body>
