@@ -26,8 +26,8 @@ window.PORTFOLIO_FILMS = [
     title: "MAN WITH A MASK",
     meta: "Direction / AI short film",
     year: "",
-    description: "",
-    youtube: "",
+    description: "An experimental short inspired by Oscar Wilde’s idea that a mask can reveal more truth than a face. Blending AI tools with traditional post-production techniques, I continue exploring new ways of building an emotional connection between my characters and the audience.",
+    youtube: "F4ASrJEk8LA",
     credits: [
       ["Direction", "Hubert Dłużniewski"]
     ],
