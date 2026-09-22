@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project - Hubert Dłużniewski</title>
+  <meta name="description" content="Selected project by Hubert Dłużniewski.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=Montserrat:wght@300;400&display=swap&subset=latin-ext" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f3f0e8;
+      --ink:#3f3f3b;
+      --heading:#2f2f2c;
+      --muted:#8a867f;
+      --line:rgba(63,63,59,.16);
+      --pad:clamp(22px,3vw,48px);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:"Inter Tight","Segoe UI",Arial,sans-serif
+    }
+    a{color:inherit;text-decoration:none}
+    .top{
+      position:sticky;top:0;z-index:20;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:16px var(--pad);
+      background:rgba(243,240,232,.9);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line)
+    }
+    .brand{font-size:10px;letter-spacing:.26em;text-transform:uppercase}
+    .nav{display:flex;gap:24px;font-size:9px;letter-spacing:.19em;text-transform:uppercase}
+    main{padding:48px var(--pad) 90px}
+    .project{
+      display:grid;
+      grid-template-columns:minmax(250px,.72fr) minmax(0,1.28fr);
+      gap:clamp(36px,5vw,78px);
+      align-items:start
+    }
+    .back{
+      display:inline-block;
+      margin-bottom:28px;
+      font-size:9px;
+      color:var(--muted);
+      letter-spacing:.18em;
+      text-transform:uppercase
+    }
+    .kicker{
+      font-size:9px;
+      color:var(--muted);
+      letter-spacing:.20em;
+      text-transform:uppercase;
+      margin-bottom:12px
+    }
+    h1{
+      margin:0 0 10px;
+      font-family:"Montserrat","Helvetica Neue",Arial,sans-serif;
+      font-size:clamp(42px,4.6vw,74px);
+      line-height:.95;
+      font-weight:300;
+      letter-spacing:.03em;
+      color:var(--heading)
+    }
+    .meta-line{
+      font-size:9px;
+      color:var(--muted);
+      letter-spacing:.17em;
+      text-transform:uppercase;
+      margin-bottom:30px
+    }
+    .description{
+      margin:0 0 34px;
+      font-size:13px;
+      line-height:1.65;
+      color:var(--muted);
+      max-width:440px
+    }
+    .credits{
+      border-top:1px solid var(--line);
+      padding-top:15px;
+      max-width:440px
+    }
+    .credit-row{
+      display:grid;
+      grid-template-columns:minmax(120px,.9fr) 1.1fr;
+      gap:16px;
+      padding:5px 0;
+      font-size:9px;
+      line-height:1.45;
+      color:var(--muted);
+    }
+    .credit-label{
+      letter-spacing:.16em;
+      text-transform:uppercase
+    }
+    .player{
+      width:100%;
+      aspect-ratio:16/9;
+      background:#111;
+      overflow:hidden
+    }
+    .player iframe,
+    .player img{
+      width:100%;
+      height:100%;
+      border:0;
+      display:block;
+      object-fit:cover
+    }
+    .placeholder{
+      position:relative;
+      width:100%;
+      height:100%
+    }
+    .placeholder::after{
+      content:"▶";
+      position:absolute;
+      left:18px;
+      bottom:18px;
+      width:32px;
+      height:32px;
+      border:1px solid rgba(255,255,255,.95);
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      color:#fff;
+      font-size:9px;
+      padding-left:2px
+    }
+    .stills{
+      margin-top:70px
+    }
+    .stills-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:end;
+      margin-bottom:18px
+    }
+    .stills-title{
+      margin:0;
+      font-family:"Montserrat","Helvetica Neue",Arial,sans-serif;
+      font-size:clamp(34px,4vw,60px);
+      font-weight:300;
+      color:var(--heading)
+    }
+    .stills-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px
+    }
+    .stills-grid img{
+      width:100%;
+      aspect-ratio:16/9;
+      object-fit:cover;
+      display:block
+    }
+    @media(max-width:900px){
+      .project{grid-template-columns:1fr}
+      .stills-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="../index.html">Hubert Dłużniewski</a>
+    <nav class="nav">
+      <a href="../index.html#film">Film</a>
+      <a href="../index.html#art">Art</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project">
+      <div>
+        <a class="back" href="../index.html#film">← All projects</a>
+        <div class="kicker" id="projectKicker">Project</div>
+        <h1 id="projectTitle">PROJECT</h1>
+        <div class="meta-line" id="projectMeta"></div>
+        <p class="description" id="projectDescription"></p>
+        <div class="credits" id="projectCredits"></div>
+      </div>
+
+      <div class="player" id="projectPlayer"></div>
+    </div>
+
+    <section class="stills" id="stillsSection" hidden>
+      <div class="stills-head">
+        <h2 class="stills-title">STILLS</h2>
+        <div class="kicker">Selected frames</div>
+      </div>
+      <div class="stills-grid" id="stillsGrid"></div>
+    </section>
+  </main>
+
+  <script src="../portfolio-data.js?v=29"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+    const projects = window.PORTFOLIO_FILMS || [];
+    const project = projects.find(item => item.slug === id) || projects[0];
+
+    if (project) {
+      document.title = `${project.title} - Hubert Dłużniewski`;
+      document.getElementById("projectKicker").textContent = project.meta || "Project";
+      document.getElementById("projectTitle").textContent = project.title || "Project";
+
+      const metaBits = [];
+      if (project.year) metaBits.push(project.year);
+      document.getElementById("projectMeta").textContent = metaBits.join(" / ");
+
+      const desc = document.getElementById("projectDescription");
+      desc.textContent = project.description || "";
+      if (!project.description) desc.style.display = "none";
+
+      const credits = document.getElementById("projectCredits");
+      (project.credits || []).forEach(([label, value]) => {
+        const row = document.createElement("div");
+        row.className = "credit-row";
+        row.innerHTML = `<div class="credit-label">${label}</div><div>${value}</div>`;
+        credits.appendChild(row);
+      });
+      if (!(project.credits || []).length) credits.style.display = "none";
+
+      const player = document.getElementById("projectPlayer");
+      if (project.youtube) {
+        player.innerHTML = `
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/${project.youtube}?rel=0&modestbranding=1&controls=1"
+            title="${project.title}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>`;
+      } else {
+        player.innerHTML = `
+          <div class="placeholder">
+            <img src="../assets/${project.image}" alt="${project.title}">
+          </div>`;
+      }
+
+      if (project.stills && project.stills.length) {
+        const stillsSection = document.getElementById("stillsSection");
+        const stillsGrid = document.getElementById("stillsGrid");
+        project.stills.forEach(filename => {
+          const img = document.createElement("img");
+          img.src = `../assets/${filename}`;
+          img.alt = `${project.title} still`;
+          stillsGrid.appendChild(img);
+        });
+        stillsSection.hidden = false;
+      }
+    }
+  </script>
+</body>
+</html>
