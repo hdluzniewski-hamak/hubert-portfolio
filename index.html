@@ -425,64 +425,66 @@
 
 
   <!--
-    ======================================================
-    EDIT PORTFOLIO CONTENT HERE
-    Add / remove / reorder FILMS and ARTWORKS only below.
-    ======================================================
+    PORTFOLIO CONTENT IS LOADED FROM:
+    data/films.txt
+    data/art.txt
   -->
   <script>
-    const films = [
-      { image: "assets/film-01.webp", title: "ODYSEJA", meta: "Direction / AI short film", link: "projects/music-video.html", position: "center" },
-      { image: "assets/film-02.webp", title: "MAN WITH A MASK", meta: "Direction / AI short film", link: "#", position: "center" },
-      { image: "assets/film-03.webp", title: "I WOULD DANCE", meta: "Direction / AI short film", link: "#", position: "center" },
-      { image: "assets/film-04.webp", title: "JAŹNICKA - PLANET B", meta: "Direction / AI short film", link: "projects/music-video.html", position: "center" },
-      { image: "assets/film-05.webp", title: "AI AND THE FUTURE OF ASYLUM DECISIONS", meta: "Direction / 2D animation", link: "#", position: "center" },
-      { image: "assets/film-06.webp", title: "DIGITAL VISAS AND DISCRIMINATIONS", meta: "Direction / 2D animation", link: "#", position: "center" },
-      { image: "assets/film-07.webp", title: "QUESTIONS", meta: "Direction / AI short film", link: "#", position: "center" },
-      { image: "assets/film-08.webp", title: "SUNTAGO - CROCODILE ISLAND", meta: "Direction / Commercial", link: "#", position: "center" },
-      { image: "assets/film-09.webp", title: "DOROTHY - CHRISTMAS ANIMATION", meta: "Direction / 2D animation", link: "#", position: "center" }
-    ];
+    function parsePipeFile(text) {
+      return text
+        .split(/?
+/)
+        .map(line => line.trim())
+        .filter(line => line && !line.startsWith("#"))
+        .map(line => line.split("|").map(part => part.trim()));
+    }
 
-    const artworks = [
-      { image: "assets/art-01.webp", title: "UNTITLED 01", medium: "Oil on canvas, 50 × 70 cm" },
-      { image: "assets/art-02.webp", title: "UNTITLED 02", medium: "Oil on canvas, 50 × 70 cm" },
-      { image: "assets/art-03.webp", title: "UNTITLED 03", medium: "Oil on canvas, 50 × 70 cm" },
-      { image: "assets/art-04.webp", title: "UNTITLED 04", medium: "Digital painting" },
-      { image: "assets/art-05.webp", title: "UNTITLED 05", medium: "Oil on canvas, 50 × 70 cm" },
-      { image: "assets/art-06.webp", title: "UNTITLED 06", medium: "Ink on paper" },
-      { image: "assets/art-07.webp", title: "UNTITLED 07", medium: "Oil on canvas, 50 × 70 cm" },
-      { image: "assets/art-08.webp", title: "UNTITLED 08", medium: "Pencil on paper" },
-      { image: "assets/art-09.webp", title: "UNTITLED 09", medium: "Digital painting" }
-    ];
+    async function loadFilms() {
+      const response = await fetch("data/films.txt?v=1");
+      if (!response.ok) throw new Error("Could not load data/films.txt");
+      const rows = parsePipeFile(await response.text());
+      const filmGrid = document.getElementById("filmGrid");
+      filmGrid.innerHTML = "";
 
-    const filmGrid = document.getElementById("filmGrid");
-    films.forEach((film) => {
-      const card = document.createElement("a");
-      card.className = "card";
-      card.href = film.link || "#";
-      card.innerHTML = `
-        <img src="${film.image}" alt="${film.title}" style="object-position:${film.position || "center"}">
-        <div class="overlay">
-          <div>
-            <h3>${film.title}</h3>
-            <p>${film.meta}</p>
-          </div>
-          <span>↗</span>
-        </div>`;
-      filmGrid.appendChild(card);
-    });
+      rows.forEach(([filename, title, meta, link = "#", position = "center"]) => {
+        const card = document.createElement("a");
+        card.className = "card";
+        card.href = link || "#";
+        card.innerHTML = `
+          <img src="assets/${filename}" alt="${title}" style="object-position:${position || "center"}">
+          <div class="overlay">
+            <div>
+              <h3>${title}</h3>
+              <p>${meta}</p>
+            </div>
+            <span>↗</span>
+          </div>`;
+        filmGrid.appendChild(card);
+      });
+    }
 
-    const artGrid = document.getElementById("artGrid");
-    artworks.forEach((artwork) => {
-      const item = document.createElement("article");
-      item.className = "art-item";
-      item.innerHTML = `
-        <img src="${artwork.image}" alt="${artwork.title}">
-        <div class="art-overlay">
-          <div class="art-title">${artwork.title}</div>
-          <div class="art-medium">${artwork.medium}</div>
-        </div>`;
-      artGrid.appendChild(item);
+    async function loadArt() {
+      const response = await fetch("data/art.txt?v=1");
+      if (!response.ok) throw new Error("Could not load data/art.txt");
+      const rows = parsePipeFile(await response.text());
+      const artGrid = document.getElementById("artGrid");
+      artGrid.innerHTML = "";
+
+      rows.forEach(([filename, title, medium]) => {
+        const item = document.createElement("article");
+        item.className = "art-item";
+        item.innerHTML = `
+          <img src="assets/${filename}" alt="${title}">
+          <div class="art-overlay">
+            <div class="art-title">${title}</div>
+            <div class="art-medium">${medium}</div>
+          </div>`;
+        artGrid.appendChild(item);
+      });
+    }
+
+    Promise.all([loadFilms(), loadArt()]).catch(error => {
+      console.error(error);
     });
   </script>
 

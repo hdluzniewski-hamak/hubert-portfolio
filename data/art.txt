@@ -1,0 +1,10 @@
+# filename | title | medium / size
+art-01.webp | UNTITLED 01 | Oil on canvas, 50 x 70 cm
+art-02.webp | UNTITLED 02 | Oil on canvas, 50 x 70 cm
+art-03.webp | UNTITLED 03 | Oil on canvas, 50 x 70 cm
+art-04.webp | UNTITLED 04 | Digital painting
+art-05.webp | UNTITLED 05 | Oil on canvas, 50 x 70 cm
+art-06.webp | UNTITLED 06 | Ink on paper
+art-07.webp | UNTITLED 07 | Oil on canvas, 50 x 70 cm
+art-08.webp | UNTITLED 08 | Pencil on paper
+art-09.webp | UNTITLED 09 | Digital painting

@@ -1,0 +1,10 @@
+# filename | title | description | link | crop position
+film-01.webp | ODYSEJA | Direction / AI short film | projects/music-video.html | center
+film-02.webp | MAN WITH A MASK | Direction / AI short film | # | center
+film-03.webp | I WOULD DANCE | Direction / AI short film | # | center
+film-04.webp | JAŹNICKA - PLANET B | Direction / AI short film | projects/music-video.html | center
+film-05.webp | AI AND THE FUTURE OF ASYLUM DECISIONS | Direction / 2D animation | # | center
+film-06.webp | DIGITAL VISAS AND DISCRIMINATIONS | Direction / 2D animation | # | center
+film-07.webp | QUESTIONS | Direction / AI short film | # | center
+film-08.webp | SUNTAGO - CROCODILE ISLAND | Direction / Commercial | # | center
+film-09.webp | DOROTHY - CHRISTMAS ANIMATION | Direction / 2D animation | # | center
