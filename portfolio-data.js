@@ -27,5 +27,12 @@ window.PORTFOLIO_ART = [
   { image: "art-06.webp", title: "UNTITLED 06", medium: "Ink on paper" },
   { image: "art-07.webp", title: "UNTITLED 07", medium: "Oil on canvas, 50 x 70 cm" },
   { image: "art-08.webp", title: "UNTITLED 08", medium: "Pencil on paper" },
-  { image: "art-09.webp", title: "SPARROW", medium: "Oil on canvas, 30 x 40 cm" }
+  { image: "art-09.webp", title: "UNTITLED 09", medium: "Digital painting" }
 ];
+
+window.PORTFOLIO_SHOWREELS = [
+  { image: "film-06.webp", title: "DIRECTING", description: "Short films, commercials, music videos and visual storytelling.", link: "reels/directing.html" },
+  { image: "film-09.webp", title: "ANIMATION", description: "2D animation, motion design and character-driven work.", link: "reels/animation.html" },
+  { image: "film-01.webp", title: "VFX / ONLINE", description: "Compositing, online finishing and visual effects work.", link: "reels/vfx-online.html" }
+];
+

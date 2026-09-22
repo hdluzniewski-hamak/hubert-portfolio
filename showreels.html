@@ -80,7 +80,7 @@
     .reel-card{display:block}
     .thumb{
       position:relative;
-      border-radius:18px;
+      
       aspect-ratio:16/9;
       overflow:hidden;
       background:#ddd
@@ -149,40 +149,34 @@
       <p>Three focused reels covering directing, animation and VFX / online work.</p>
     </section>
 
-    <section class="reels-grid">
-      <a class="reel-card" href="reels/directing.html">
-        <div class="thumb">
-          <img src="assets/film-06.webp" alt="Directing showreel">
-          <span class="play">▶</span>
-        </div>
-        <div class="reel-meta">
-          <h2>DIRECTING</h2>
-          <p>Short films, commercials, music videos and visual storytelling.</p>
-        </div>
-      </a>
-
-      <a class="reel-card" href="reels/animation.html">
-        <div class="thumb">
-          <img src="assets/film-09.webp" alt="Animation showreel">
-          <span class="play">▶</span>
-        </div>
-        <div class="reel-meta">
-          <h2>ANIMATION</h2>
-          <p>2D animation, motion design and character-driven work.</p>
-        </div>
-      </a>
-
-      <a class="reel-card" href="reels/vfx-online.html">
-        <div class="thumb">
-          <img src="assets/film-01.webp" alt="VFX and online showreel">
-          <span class="play">▶</span>
-        </div>
-        <div class="reel-meta">
-          <h2>VFX / ONLINE</h2>
-          <p>Compositing, online finishing and visual effects work.</p>
-        </div>
-      </a>
-    </section>
+    <section class="reels-grid" id="showreelsGrid"></section>
   </main>
+
+  <script src="portfolio-data.js?v=27"></script>
+  <script>
+    const showreelsGrid = document.getElementById("showreelsGrid");
+    const showreels = window.PORTFOLIO_SHOWREELS || [];
+
+    showreels.forEach((reel) => {
+      const card = document.createElement("a");
+      card.className = "reel-card";
+      card.href = reel.link || "#";
+      card.innerHTML = `
+        <div class="thumb">
+          <img src="assets/${reel.image}" alt="${reel.title}">
+          <span class="play">▶</span>
+        </div>
+        <div class="reel-meta">
+          <h2>${reel.title}</h2>
+          <p>${reel.description}</p>
+        </div>`;
+      showreelsGrid.appendChild(card);
+    });
+
+    if (!showreels.length) {
+      showreelsGrid.innerHTML = '<p style="font-size:12px;color:#8a867f">No showreel data found. Check portfolio-data.js.</p>';
+    }
+  </script>
+
 </body>
 </html>
