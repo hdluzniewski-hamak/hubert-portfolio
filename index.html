@@ -426,13 +426,14 @@
 
   <!--
     PORTFOLIO CONTENT IS LOADED FROM:
-    data/films.txt
-    data/art.txt
+    films.txt
+    art.txt
   -->
   <script>
     function parsePipeFile(text) {
       return text
-        .split(/?
+        .split(/
+?
 /)
         .map(line => line.trim())
         .filter(line => line && !line.startsWith("#"))
@@ -440,8 +441,8 @@
     }
 
     async function loadFilms() {
-      const response = await fetch("data/films.txt?v=1");
-      if (!response.ok) throw new Error("Could not load data/films.txt");
+      const response = await fetch("films.txt?v=25");
+      if (!response.ok) throw new Error("Could not load films.txt");
       const rows = parsePipeFile(await response.text());
       const filmGrid = document.getElementById("filmGrid");
       filmGrid.innerHTML = "";
@@ -464,8 +465,8 @@
     }
 
     async function loadArt() {
-      const response = await fetch("data/art.txt?v=1");
-      if (!response.ok) throw new Error("Could not load data/art.txt");
+      const response = await fetch("art.txt?v=25");
+      if (!response.ok) throw new Error("Could not load art.txt");
       const rows = parsePipeFile(await response.text());
       const artGrid = document.getElementById("artGrid");
       artGrid.innerHTML = "";
@@ -485,6 +486,17 @@
 
     Promise.all([loadFilms(), loadArt()]).catch(error => {
       console.error(error);
+
+      const filmGrid = document.getElementById("filmGrid");
+      const artGrid = document.getElementById("artGrid");
+
+      if (filmGrid && !filmGrid.children.length) {
+        filmGrid.innerHTML = '<p style="font-size:12px;color:#8a867f">Film data could not be loaded. Check films.txt in the root folder.</p>';
+      }
+
+      if (artGrid && !artGrid.children.length) {
+        artGrid.innerHTML = '<p style="font-size:12px;color:#8a867f">Art data could not be loaded. Check art.txt in the root folder.</p>';
+      }
     });
   </script>
 
