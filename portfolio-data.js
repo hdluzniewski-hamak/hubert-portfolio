@@ -39,8 +39,8 @@ window.PORTFOLIO_FILMS = [
     title: "I WOULD DANCE",
     meta: "Direction / AI short film",
     year: "",
-    description: "",
-    youtube: "",
+    description: "An experimental short exploring the idea that happiness, rather than success, is what truly drives us. Blending AI with traditional filmmaking and post-production, the film follows three characters in search of an emotional connection.",
+    youtube: "klaLk_SQ3NY",
     credits: [
       ["Direction", "Hubert Dłużniewski"]
     ],
