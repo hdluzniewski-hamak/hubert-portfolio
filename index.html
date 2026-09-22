@@ -258,15 +258,17 @@
       margin:12px 0 30px;
       letter-spacing:-.04em
     }
-    .about p{font-size:16px;line-height:1.65;max-width:760px;margin:0 0 18px}
+    .about p{font-size:15px;line-height:1.7;max-width:760px;margin:0 0 18px;color:var(--muted)}
     .about p:last-child{margin-bottom:0}
     .about-side{
       align-self:end;
       border-top:1px solid var(--line);
       padding-top:20px;
-      font-size:13px;
-      line-height:1.8;
-      color:#393733
+      font-size:9px;
+      line-height:1.65;
+      color:var(--muted);
+      letter-spacing:.18em;
+      text-transform:uppercase
     }
 
     footer{
@@ -274,7 +276,7 @@
       display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end
     }
     .contact-big{font-size:clamp(42px,6vw,88px);letter-spacing:-.045em;line-height:.95;color:var(--heading)}
-    .contact-links{font-size:13px;line-height:2}
+    .contact-links{font-size:9px;line-height:2.15;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}
 
     @media (max-width:900px){
       .nav{gap:16px}
