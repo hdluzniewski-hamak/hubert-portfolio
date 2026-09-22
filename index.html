@@ -335,18 +335,15 @@
     }
   
     .contact-section{
-      padding:90px var(--pad) 70px;
+      padding:82px var(--pad) 64px;
       border-top:1px solid var(--line);
       display:grid;
-      grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
-      gap:clamp(40px,6vw,90px);
-      align-items:stretch
+      grid-template-columns:minmax(0,1fr) 300px;
+      gap:clamp(48px,8vw,130px);
+      align-items:start
     }
     .contact-copy{
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      min-height:520px
+      max-width:760px
     }
     .contact-kicker{
       font-size:9px;
@@ -358,30 +355,44 @@
     .contact-title{
       margin:0;
       font-family:"Montserrat","Helvetica Neue",Arial,sans-serif;
-      font-size:clamp(42px,5vw,78px);
-      line-height:.95;
+      font-size:clamp(38px,4.4vw,68px);
+      line-height:.98;
       font-weight:300;
       letter-spacing:-.03em;
       color:var(--heading)
     }
     .contact-list{
-      margin-top:50px;
-      padding-top:18px;
-      border-top:1px solid var(--line);
-      max-width:520px
+      margin-top:42px;
+      max-width:430px
     }
     .contact-list a{
       display:flex;
-      justify-content:space-between;
-      gap:24px;
-      padding:9px 0;
+      align-items:center;
+      gap:14px;
+      padding:8px 0;
       font-size:10px;
       color:var(--muted);
-      letter-spacing:.10em;
-      text-transform:uppercase
+      letter-spacing:.04em
+    }
+    .contact-icon{
+      width:16px;
+      height:16px;
+      flex:0 0 16px;
+      color:var(--muted)
+    }
+    .contact-icon svg{
+      width:100%;
+      height:100%;
+      display:block;
+      stroke:currentColor;
+      fill:none;
+      stroke-width:1.5
     }
     .contact-note{
-      margin-top:28px;
+      margin-top:34px;
+      padding-top:16px;
+      border-top:1px solid var(--line);
+      max-width:430px;
       font-size:9px;
       line-height:1.6;
       color:var(--muted);
@@ -389,7 +400,8 @@
       text-transform:uppercase
     }
     .contact-image{
-      min-height:520px;
+      width:300px;
+      aspect-ratio:1/1;
       overflow:hidden
     }
     .contact-image img{
@@ -401,8 +413,7 @@
     }
     @media (max-width:900px){
       .contact-section{grid-template-columns:1fr}
-      .contact-copy{min-height:auto}
-      .contact-image{min-height:420px}
+      .contact-image{width:min(320px,100%)}
     }
 
   </style>
@@ -485,16 +496,37 @@
 
   <section id="contact" class="contact-section">
     <div class="contact-copy">
-      <div>
-        <div class="contact-kicker">Contact</div>
-        <h2 class="contact-title">LET’S CREATE<br>SOMETHING INTERESTING.</h2>
+      <div class="contact-kicker">Contact</div>
+      <h2 class="contact-title">LET’S CREATE<br>SOMETHING INTERESTING.</h2>
 
-        <div class="contact-list">
-          <a href="mailto:hdluzniewski@gmail.com"><span>Email</span><span>hdluzniewski@gmail.com ↗</span></a>
-          <a href="https://www.instagram.com/kalakadaj" target="_blank" rel="noopener noreferrer"><span>Instagram</span><span>@kalakadaj ↗</span></a>
-          <a href="https://www.linkedin.com/in/hubert-d%C5%82u%C5%BCniewski-588655109/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span>Hubert Dłużniewski ↗</span></a>
-          <a href="https://www.tiktok.com/@kalakadaj_doodles" target="_blank" rel="noopener noreferrer"><span>TikTok</span><span>@kalakadaj_doodles ↗</span></a>
-        </div>
+      <div class="contact-list">
+        <a href="mailto:hdluzniewski@gmail.com" aria-label="Email">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14"/><path d="M4 6l8 7 8-7"/></svg>
+          </span>
+          <span>hdluzniewski@gmail.com</span>
+        </a>
+
+        <a href="https://www.instagram.com/kalakadaj" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="3.5"/><circle cx="17.3" cy="6.8" r=".8" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <span>@kalakadaj</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/hubert-d%C5%82u%C5%BCniewski-588655109/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16"/><path d="M8 10v7M8 7.5v.1M11.5 17v-4.2c0-1.8 1.1-2.9 2.6-2.9 1.6 0 2.4 1.1 2.4 3V17"/></svg>
+          </span>
+          <span>Hubert Dłużniewski</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@kalakadaj_doodles" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 4v10.2a4.2 4.2 0 1 1-3.2-4.1"/><path d="M14 4c1 2.2 2.5 3.5 4.5 3.8"/></svg>
+          </span>
+          <span>@kalakadaj_doodles</span>
+        </a>
       </div>
 
       <div class="contact-note">Based in Warsaw, Poland<br>Available for selected freelance and collaboration projects.</div>
@@ -534,7 +566,7 @@
     films.forEach((film) => {
       const card = document.createElement("a");
       card.className = "card";
-      card.href = film.link || "#";
+      card.href = `projects/film.html?id=${encodeURIComponent(film.slug)}`;
       card.innerHTML = `
         <img src="assets/${film.image}" alt="${film.title}" style="object-position:${film.position || "center"}">
         <div class="overlay">
