@@ -449,6 +449,40 @@
       .hero-video{display:none}
     }
 
+  
+    /* v34 - white hero UI over moving background */
+    .hero,
+    .hero a,
+    .hero .hero-kicker,
+    .hero .hero-title,
+    .hero .hero-sub,
+    .hero .hero-meta,
+    .hero .scroll-note,
+    .hero .scroll-note *,
+    .hero .showreel-link,
+    .hero .showreel-link *{
+      color:#fff !important;
+    }
+
+    .hero .showreel-link .play,
+    .hero .showreel-link .film-play{
+      color:#fff !important;
+      border-color:rgba(255,255,255,.95) !important;
+    }
+
+    .topbar.hero-state,
+    .topbar.hero-state a,
+    .topbar.hero-state .brand,
+    .topbar.hero-state .nav a{
+      color:#fff !important;
+    }
+
+    .topbar.hero-state{
+      background:transparent !important;
+      border-bottom-color:transparent !important;
+      backdrop-filter:none !important;
+    }
+
   </style>
 </head>
 <body>
@@ -656,6 +690,24 @@
       heroVideo.play().catch(() => {
         // If autoplay is unavailable, the poster image stays visible.
       });
+    })();
+  </script>
+
+
+  <script>
+    (() => {
+      const header = document.querySelector(".top");
+      const hero = document.querySelector(".hero");
+      if (!header || !hero) return;
+
+      const updateHeroHeader = () => {
+        const rect = hero.getBoundingClientRect();
+        header.classList.toggle("hero-state", rect.bottom > 80);
+      };
+
+      updateHeroHeader();
+      window.addEventListener("scroll", updateHeroHeader, { passive:true });
+      window.addEventListener("resize", updateHeroHeader);
     })();
   </script>
 
