@@ -12,7 +12,7 @@
     :root{
       --bg:#f3f0e8;
       --paper:#f8f6f1;
-      --ink:#ffffff;
+      --ink:#3f3f3b;
       --muted:#8a867f;
       --line:rgba(63,63,59,.16);
       --heading:#2f2f2c;
@@ -481,6 +481,40 @@
       background:transparent !important;
       border-bottom-color:transparent !important;
       backdrop-filter:none !important;
+    }
+
+  
+    /* v35 - correct white typography on homepage hero */
+    .hero .hero-copy,
+    .hero .eyebrow,
+    .hero h1,
+    .hero .hero-role,
+    .hero .showreel,
+    .hero .showreel *,
+    .hero .hero-note,
+    .hero .scroll-note{
+      color:#fff !important;
+    }
+
+    .hero .showreel-icon{
+      color:#fff !important;
+      border-color:rgba(255,255,255,.95) !important;
+    }
+
+    /* Homepage menu is white while it sits over the hero */
+    .top:not(.is-scrolled),
+    .top:not(.is-scrolled) a,
+    .top:not(.is-scrolled) .brand,
+    .top:not(.is-scrolled) .nav a{
+      color:#fff !important;
+    }
+
+    /* Once the homepage header moves onto the light page, return to grey */
+    .top.is-scrolled,
+    .top.is-scrolled a,
+    .top.is-scrolled .brand,
+    .top.is-scrolled .nav a{
+      color:var(--ink) !important;
     }
 
   </style>
