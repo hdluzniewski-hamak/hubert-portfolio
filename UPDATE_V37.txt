@@ -1,0 +1,12 @@
+WWW_HUBERT v37 — aktualizacja CONTACT
+
+- Podmieniono zdjecie w CONTACT na pelny kadr dostarczony przez autora (1916 x 812).
+- Zachowano proporcje i caly obraz, bez kadrowania (object-fit: contain).
+- Na desktopie wysokosc obrazu jest zsynchronizowana z wysokoscia naglowka.
+- Na ekranach mobilnych obraz dopasowuje sie szerokoscia bez kadrowania.
+- Pozostawiono pozostale elementy v36, w tym system edycji podpisow i kolejnosci filmow.
+
+WDROZENIE GITHUB
+Rozpakuj ZIP, a jego ZAWARTOSC (w tym index.html, portfolio-data.js, assets, projects, reels)
+wgraj do katalogu glownego repozytorium — nie jako jeden katalog v37 i nie jako plik ZIP.
+Pozostaw pliki we wskazanych lokalizacjach.

@@ -1,0 +1,18 @@
+FILMS — szybka edycja podpisow i kolejnosci (v36)
+
+Otworz plik portfolio-data.js.
+
+PODPISY: znajdz PORTFOLIO_FILM_CAPTIONS. Zmien tekst po dwukropku, np.
+  "odyseja": "Direction / AI short film",
+Nie zmieniaj slug (nazwy po lewej).
+
+KOLEJNOSC: znajdz PORTFOLIO_FILM_ORDER. Przesuwaj cale linijki ze slugami.
+Pierwszy slug = pierwszy film w galerii. Kazdy slug powinien wystepowac raz.
+
+TYTUL / ZDJECIE / OPIS / FILM / CREDITS: znajdz obiekt filmu wyzej w PORTFOLIO_FILMS.
+Po edycji zapisz i wgraj portfolio-data.js do repozytorium GitHub.
+
+ABOUT: rownowazenie odstepow i rownanie tekstu do obu krawedzi na desktopie.
+CONTACT: nowe zdjecie assets/contact-cinematic.webp (oryginalny kadr 1916 x 812).
+Zdjecie jest skalowane proporcjonalnie bez przycinania. W wersji desktop
+jego wysokosc jest rowna wysokosci napisu LET'S CREATE SOMETHING INTERESTING.

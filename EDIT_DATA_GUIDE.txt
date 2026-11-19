@@ -1,0 +1,31 @@
+HOW TO EDIT PORTFOLIO CONTENT
+
+The two editable files now sit directly in the ROOT of the repository:
+
+films.txt
+art.txt
+
+They should be visible next to:
+index.html
+showreels.html
+
+FILMS
+-----
+Each line:
+filename | title | description | link | crop position
+
+Example:
+film-10.webp | NEW PROJECT | Direction / Short film | projects/new-project.html | center
+
+ART
+---
+Each line:
+filename | title | medium / size
+
+Example:
+art-10.webp | THE DANCER | Oil on canvas, 70 x 100 cm
+
+IMPORTANT:
+- assets/ still contains all image files
+- films.txt and art.txt must sit next to index.html
+- do not place them in another folder

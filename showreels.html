@@ -160,7 +160,7 @@
     showreels.forEach((reel) => {
       const card = document.createElement("a");
       card.className = "reel-card";
-      card.href = reel.link || "#";
+      card.href = `reels/reel.html?id=${encodeURIComponent(reel.slug)}`;
       card.innerHTML = `
         <div class="thumb">
           <img src="assets/${reel.image}" alt="${reel.title}">

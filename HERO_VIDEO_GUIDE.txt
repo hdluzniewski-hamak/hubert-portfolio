@@ -1,0 +1,22 @@
+HERO VIDEO - v32
+
+Put your loop here:
+assets/hero-loop.mp4
+
+Recommended export:
+- about 10 seconds
+- MP4 / H.264
+- 1920 x 1080
+- no audio
+- 24, 25 or 30 fps
+- target size around 5-10 MB
+
+Behaviour:
+- assets/hero.webp remains the fallback/poster
+- the still image appears first
+- when the MP4 is ready, it fades in
+- autoplay / muted / loop / playsinline are enabled
+- reduced-motion users keep the still image
+
+Later, replace only:
+assets/hero-loop.mp4

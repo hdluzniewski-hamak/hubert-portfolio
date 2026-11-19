@@ -1,0 +1,32 @@
+HOW TO EDIT THE ART SECTION
+
+1. Open index.html on GitHub.
+2. Click Edit this file.
+3. Press Ctrl+F and search for:
+   EDIT ARTWORK TITLES & MEDIUMS HERE
+
+You will see a simple list like:
+
+{ title: "UNTITLED 01", medium: "Oil on canvas, 50 × 70 cm" },
+
+Change only the text inside quotation marks, for example:
+
+{ title: "MASK No. 3", medium: "Oil on canvas, 70 × 100 cm" },
+
+or:
+
+{ title: "SKETCH 01", medium: "Pencil on paper" },
+
+or:
+
+{ title: "PORTRAIT", medium: "Digital painting" },
+
+The order of these 9 lines matches the order of the 9 images:
+art-01.webp
+art-02.webp
+...
+art-09.webp
+
+To replace an image later, upload a new file to /assets using the SAME filename,
+for example replace art-03.webp with another art-03.webp.
+The layout and caption will stay in place.

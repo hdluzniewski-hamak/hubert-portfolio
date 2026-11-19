@@ -1,0 +1,61 @@
+HOW TO EDIT THE WHOLE PORTFOLIO
+
+Edit one file:
+portfolio-data.js
+
+FILM PROJECTS
+-------------
+Each film has its own block.
+
+Important fields:
+
+slug:
+used in the project-page URL
+
+image:
+thumbnail / placeholder image from assets/
+
+title:
+project title
+
+meta:
+small description shown on the thumbnail and project page
+
+year:
+optional year
+
+description:
+project description shown on the left side of the project page
+
+youtube:
+YouTube video ID ONLY, not the full link.
+Example:
+For https://www.youtube.com/watch?v=TBQXugY_n5s
+use:
+youtube: "TBQXugY_n5s"
+
+credits:
+pairs of label + value, for example:
+
+credits: [
+  ["Artist", "Jaźnicka"],
+  ["Concept, Direction, Animation", "Hubert Dłużniewski"]
+]
+
+Optional stills:
+stills: ["planet-b-01.webp", "planet-b-02.webp"]
+
+ART
+---
+Still controlled from PORTFOLIO_ART.
+
+SHOWREELS
+---------
+Still controlled from PORTFOLIO_SHOWREELS.
+
+CONTACT IMAGE
+-------------
+Replace:
+assets/contact-placeholder.webp
+
+Use the same filename and no code changes are needed.

@@ -14,7 +14,7 @@ window.PORTFOLIO_FILMS = [
     meta: "Direction / AI short film",
     year: "2026",
     description: "",
-    youtube: "jMsma0EnTxQ",
+    youtube: "",
     credits: [
       ["Direction", "Hubert Dłużniewski"]
     ],
@@ -26,8 +26,8 @@ window.PORTFOLIO_FILMS = [
     title: "MAN WITH A MASK",
     meta: "Direction / AI short film",
     year: "",
-    description: "An experimental short inspired by Oscar Wilde’s idea that a mask can reveal more truth than a face. Blending AI tools with traditional post-production techniques, I continue exploring new ways of building an emotional connection between my characters and the audience.",
-    youtube: "F4ASrJEk8LA",
+    description: "",
+    youtube: "",
     credits: [
       ["Direction", "Hubert Dłużniewski"]
     ],
@@ -39,8 +39,8 @@ window.PORTFOLIO_FILMS = [
     title: "I WOULD DANCE",
     meta: "Direction / AI short film",
     year: "",
-    description: "An experimental short exploring the idea that happiness, rather than success, is what truly drives us. Blending AI with traditional filmmaking and post-production, the film follows three characters in search of an emotional connection.",
-    youtube: "klaLk_SQ3NY",
+    description: "",
+    youtube: "",
     credits: [
       ["Direction", "Hubert Dłużniewski"]
     ],
@@ -127,6 +127,53 @@ window.PORTFOLIO_FILMS = [
   }
 ];
 
+/*
+========================================================
+QUICK FILM EDITS — easiest place to change titles/captions/order
+
+1. CAPTIONS: Change only the text after the colon in the list below.
+   A caption appears under the film thumbnail and in the film details.
+2. ORDER: Move the slug lines in FILM_ORDER up or down.
+   Keep every slug once. A film missing from the list stays at the end.
+3. THUMBNAILS / VIDEO / CREDITS: Edit the corresponding film object above.
+========================================================
+*/
+window.PORTFOLIO_FILM_CAPTIONS = {
+  "odyseja": "Direction / AI short film",
+  "man-with-a-mask": "Direction / AI short film",
+  "i-would-dance": "Direction / AI short film",
+  "planet-b": "Music video / Direction",
+  "ai-future-asylum-decisions": "Direction / 2D animation",
+  "digital-visas-discriminations": "Direction / 2D animation",
+  "questions": "Direction / AI short film",
+  "suntago-crocodile-island": "Direction / Commercial",
+  "dorothy-christmas-animation": "Direction / 2D animation"
+};
+
+window.PORTFOLIO_FILM_ORDER = [
+  "odyseja",
+  "man-with-a-mask",
+  "i-would-dance",
+  "planet-b",
+  "ai-future-asylum-decisions",
+  "digital-visas-discriminations",
+  "questions",
+  "suntago-crocodile-island",
+  "dorothy-christmas-animation"
+];
+
+// Apply both sets of edits consistently across the homepage and film detail pages.
+const filmOrder = new Map(window.PORTFOLIO_FILM_ORDER.map((slug, index) => [slug, index]));
+window.PORTFOLIO_FILMS.forEach(film => {
+  if (Object.prototype.hasOwnProperty.call(window.PORTFOLIO_FILM_CAPTIONS, film.slug)) {
+    film.meta = window.PORTFOLIO_FILM_CAPTIONS[film.slug];
+  }
+});
+window.PORTFOLIO_FILMS.sort((a, b) =>
+  (filmOrder.get(a.slug) ?? Number.MAX_SAFE_INTEGER) -
+  (filmOrder.get(b.slug) ?? Number.MAX_SAFE_INTEGER)
+);
+
 window.PORTFOLIO_ART = [
   { image: "art-01.webp", title: "UNTITLED 01", medium: "Oil on canvas, 50 x 70 cm" },
   { image: "art-02.webp", title: "UNTITLED 02", medium: "Oil on canvas, 50 x 70 cm" },
@@ -140,8 +187,35 @@ window.PORTFOLIO_ART = [
 ];
 
 window.PORTFOLIO_SHOWREELS = [
-  { image: "film-06.webp", title: "DIRECTING", description: "Short films, commercials, music videos and visual storytelling.", link: "reels/directing.html" },
-  { image: "film-09.webp", title: "ANIMATION", description: "2D animation, motion design and character-driven work.", link: "reels/animation.html" },
-  { image: "film-01.webp", title: "VFX / ONLINE", description: "Compositing, online finishing and visual effects work.", link: "reels/vfx-online.html" }
+  {
+    slug: "directing",
+    image: "film-06.webp",
+    title: "DIRECTING",
+    description: "Short films, commercials, music videos and visual storytelling.",
+    youtube: "",
+    credits: [
+      ["Showreel", "Directing"]
+    ]
+  },
+  {
+    slug: "animation",
+    image: "film-09.webp",
+    title: "ANIMATION",
+    description: "2D animation, motion design and character-driven work.",
+    youtube: "",
+    credits: [
+      ["Showreel", "Animation"]
+    ]
+  },
+  {
+    slug: "vfx-online",
+    image: "film-01.webp",
+    title: "VFX / ONLINE",
+    description: "Compositing, online finishing and visual effects work.",
+    youtube: "",
+    credits: [
+      ["Showreel", "VFX / Online"]
+    ]
+  }
 ];
 
