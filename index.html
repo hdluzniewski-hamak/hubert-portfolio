@@ -532,6 +532,21 @@
       color:var(--ink) !important;
     }
 
+
+    /* v41: play triangles are CSS shapes, not platform-dependent emoji glyphs. */
+    .showreel-icon::before,.film-play::before{
+      content:"";display:block;width:0;height:0;
+      border-top:5px solid transparent;border-bottom:5px solid transparent;
+      border-left:7px solid currentColor;transform:translateX(1px);
+    }
+    /* Mobile header: constrain the entire surname within the viewport. */
+    @media (max-width:900px){
+      .hero-copy{width:100%;min-width:0;max-width:100%}
+      .hero h1{max-width:100%;font-size:clamp(32px,5.5vw,50px);letter-spacing:.09em;white-space:nowrap}
+    }
+    @media (max-width:620px){
+      .hero h1{font-size:clamp(20px,6.8vw,42px);letter-spacing:.055em;line-height:1.06;white-space:nowrap}
+    }
   </style>
 </head>
 <body>
@@ -555,7 +570,7 @@
         <h1>HUBERT<br>DŁUŻNIEWSKI</h1>
         <div class="hero-role">Film / Animation / VFX / Art</div>
         <a class="showreel" href="showreels.html">
-          <span class="showreel-icon">▶</span>
+          <span class="showreel-icon" aria-hidden="true"></span>
           <span>Watch showreel</span>
         </a>
       </div>
@@ -693,7 +708,7 @@
             <h3>${film.title}</h3>
             <p>${film.meta}</p>
           </div>
-          <span class="film-play">▶</span>
+          <span class="film-play" aria-hidden="true"></span>
         </div>`;
       filmGrid.appendChild(card);
     });
