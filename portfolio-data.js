@@ -105,7 +105,7 @@ window.PORTFOLIO_FILMS = [
     meta: "Direction / AI short film",
     year: "",
     description: "An original spot about the importance of asking the right questions and their impact on creativity.",
-    youtube: "",
+    youtube: "S3u3JHTFle0",
     credits: [
       ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
       ["Visuals", "AI-generated imagery (Higgsfield)"],
@@ -117,13 +117,13 @@ window.PORTFOLIO_FILMS = [
   {
     slug: "suntago-crocodile-island",
     image: "film-08.webp",
-    title: "SUNTAGO - CROCODILE ISLAND",
+    title: "SUNTAGO Crocodile Island 15s",
     meta: "Direction / Commercial",
     year: "",
-    description: "",
-    youtube: "",
+    description: "A short animated commercial promoting the newly opened space, Crocodile Island—a tropical island full of games and activities for children, located in the heart of the SUNTAGO Water Park.",
+    youtube: "HV1BtyhNg4A",
     credits: [
-      ["Direction", "Hubert Dłużniewski"]
+      ["Directing, animation, concept art", "Hubert Dłużniewski"]
     ],
     position: "center"
   },
@@ -137,7 +137,8 @@ window.PORTFOLIO_FILMS = [
     youtube: "EfSza2HUw2E",
     credits: [
       ["Directing, animation, concept art", "Hubert Dłużniewski"],
-      ["Composer", "Marcin Kuczewski"]
+      ["DOP", "Igor Procajło"],
+      ["Composer", "Jacek Lachowicz"]
     ],
     position: "center"
   },
@@ -150,8 +151,14 @@ window.PORTFOLIO_FILMS = [
     description: "A hybrid project combining 3D animation with live-action footage. The video was nominated for Berlin Video Music Awards 2022.",
     youtube: "3nZf5f63_UQ",
     credits: [
-      ["Artist", "Jaźnicka"],
-      ["Concept, Direction, Animation", "Hubert Dłużniewski"]
+      ["Concept, Direction, Animation", "Hubert Dłużniewski"],
+      ["Vocal/Lyric", "Kasia Jaźnicka"],
+      ["Music", "Marcin Kuczewski, Kasia Jaźnicka"],
+      ["Production", "Marcin Kuczewski"],
+      ["Guitar", "Jakub Laszuk"],
+      ["Mastering", "Brad Blackwood"],
+      ["Vocal Recording/MIX", "Chris Aiken"]
+      
     ],
     position: "center"
   },
