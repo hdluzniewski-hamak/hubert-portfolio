@@ -183,7 +183,7 @@ window.PORTFOLIO_FILMS = [
   },
   {
     slug: "bylo-by-lepiej",
-    image: "film-11.webp",
+    image: "film-12.webp",
     title: "JAŹNICKA Było by lepiej",
     meta: "Music video / Direction",
     year: "",
@@ -198,6 +198,27 @@ window.PORTFOLIO_FILMS = [
       ["Mix / Mastering", "Rafał Smoleń"],
       ["Vocal Recording/MIX", "Chris Aiken"],
       ["Actors", "Krystyna Lama Szydłowska, Konrad Cichoń, Jaźnicka"]
+      
+    ],
+    position: "center"
+  },
+  {
+    slug: "daleko",
+    image: "film-13.webp",
+    title: "JAŹNICKA Daleko",
+    meta: "Music video / Direction",
+    year: "",
+    description: "A surreal transformation achieved by replacing the actor’s head with the head of Bruno, a dog, within live-action footage.",
+    youtube: "S9eobXEp7UU",
+    credits: [
+      ["Concept, Directing, VFX/Online", "Hubert Dłużniewski"],
+      ["DOP", "Jadzia Pietraszkiewicz"],
+      ["Vocal/Lyric", "Kasia Jaźnicka"],
+      ["Music", "Igor Szulc"],
+      ["Mix / Mastering", "Rafał Smoleń"],
+      ["Stylist", "Renata Miklewska"],
+      ["Make Up", "Dagmara Śrama-Pieńkowska"],
+      ["Hair", "Kamil Pecka /J aga Hupało Born To Create"]
       
     ],
     position: "center"
