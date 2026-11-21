@@ -14,7 +14,9 @@ window.PORTFOLIO_FILMS = [
     meta: "Direction / AI short film",
     year: "2026",
     description: `A contemporary interpretation of Homer’s Odyssey — a journey across the sea, through temptation and danger, where one direction remains more important than all others: the way home. Blending cinematic storytelling, AI tools and traditional post-production techniques, the film reimagines the ancient myth through a modern visual language.
+
 Credits:
+
 Concept, Direction, Editing & Online: Hubert Dłużniewski
 Visuals: AI-generated imagery (Higgsfield)
 Music: AI-generated (Suno)`,
