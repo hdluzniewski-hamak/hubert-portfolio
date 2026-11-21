@@ -291,8 +291,8 @@ window.PORTFOLIO_SHOWREELS = [
   {
     slug: "directing",
     image: "directing.webp",
-    title: "DIRECTING",
-    description: "Short films, commercials, music videos and visual storytelling.",
+    title: "DIRECTOR'S REEL Selected works",
+    description: "Live-action footage, animation 2D, and animation 3D come together in a single visual narrative. A reflection of my way of thinking through images and directing beyond the boundaries of technique.",
     youtube: "",
     credits: [
       ["Showreel", "Directing"]
@@ -301,10 +301,10 @@ window.PORTFOLIO_SHOWREELS = [
   {
     slug: "animation",
     image: "animation.webp",
-    title: "ANIMATION",
-    description: "2D animation, motion design and character-driven work.",
+    title: "CARTOON ANIMATION",
+    description: "A selection of cartoon-style animation focused on character, timing and expressive movement. Showcasing playful storytelling across different styles and formats.",
     youtube: "",
-    vimeo: "265749506",
+    vimeo: "397393253",
     credits: [
       ["Showreel", "Animation"]
     ]
@@ -312,8 +312,8 @@ window.PORTFOLIO_SHOWREELS = [
   {
     slug: "vfx-online",
     image: "online.webp",
-    title: "VFX / ONLINE",
-    description: "Compositing, online finishing and visual effects work.",
+    title: "ONLINE / VFX Compositing",
+    description: "A collection of online and compositing work where live-action, CGI and visual effects merge into a unified visual language.",
     youtube: "",
     credits: [
       ["Showreel", "VFX / Online"]
