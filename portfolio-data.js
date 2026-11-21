@@ -18,7 +18,9 @@ window.PORTFOLIO_FILMS = [
     credits: [
       ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
       ["Visuals", "AI-generated imagery (Higgsfield)"],
-      ["Music", "AI-generated (Suno)"]
+      ["Music", "AI-generated (Suno)"],
+      ["Sound", "ElevenLabs"]
+    ],
     ],
     position: "center"
   },
@@ -74,26 +76,26 @@ window.PORTFOLIO_FILMS = [
   {
     slug: "ai-future-asylum-decisions",
     image: "film-05.webp",
-    title: "AI AND THE FUTURE OF ASYLUM DECISIONS",
+    title: "AI and the Future of Asylum Decisions",
     meta: "Direction / 2D animation",
     year: "",
-    description: "",
-    youtube: "",
+    description: "One of two animated explainers for Hertie School in Berlin.",
+    youtube: "jmi5P2hfrMw",
     credits: [
-      ["Direction", "Hubert Dłużniewski"]
+      ["Directing, animation, concept art", "Hubert Dłużniewski"]
     ],
     position: "center"
   },
   {
     slug: "digital-visas-discriminations",
     image: "film-06.webp",
-    title: "DIGITAL VISAS AND DISCRIMINATIONS",
+    title: "Digital Visas and Discriminations",
     meta: "Direction / 2D animation",
     year: "",
-    description: "",
-    youtube: "",
+    description: "One of two animated explainers for Hertie School in Berlin.",
+    youtube: "typbR7CnKYk",
     credits: [
-      ["Direction", "Hubert Dłużniewski"]
+      ["Directing, animation, concept art", "Hubert Dłużniewski"]
     ],
     position: "center"
   },
@@ -103,10 +105,14 @@ window.PORTFOLIO_FILMS = [
     title: "QUESTIONS",
     meta: "Direction / AI short film",
     year: "",
-    description: "",
+    description: "An original spot about the importance of asking the right questions and their impact on creativity.
+",
     youtube: "",
     credits: [
-      ["Direction", "Hubert Dłużniewski"]
+      ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
+      ["Visuals", "AI-generated imagery (Higgsfield)"],
+      ["Music", "AI-generated (Suno)"],
+      ["Sound", "ElevenLabs"]
     ],
     position: "center"
   },
