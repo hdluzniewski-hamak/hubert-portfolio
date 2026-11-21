@@ -28,16 +28,12 @@ window.PORTFOLIO_FILMS = [
     title: "MAN WITH A MASK",
     meta: "Direction / AI short film",
     year: "",
-    description: `An experimental short inspired by Oscar Wilde’s idea that a mask can reveal more truth than a face. Blending AI tools with traditional post-production techniques, I continue exploring new ways of building an emotional connection between my characters and the audience.
-
-​Credits:
-
-Concept, Direction, Editing & Online: Hubert Dłużniewski
-Visuals: AI-generated imagery (Higgsfield)
-Music: AI-generated (Suno)`,
+    description: `An experimental short inspired by Oscar Wilde’s idea that a mask can reveal more truth than a face. Blending AI tools with traditional post-production techniques, I continue exploring new ways of building an emotional connection between my characters and the audience.`,
     youtube: "F4ASrJEk8LA",
     credits: [
-      ["", ""]
+       ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
+      ["Visuals", "AI-generated imagery (Higgsfield)"],
+      ["Music", "AI-generated (Suno)"]
     ],
     position: "center"
   },
@@ -47,17 +43,13 @@ Music: AI-generated (Suno)`,
     title: "I WOULD DANCE",
     meta: "Direction / AI short film",
     year: "",
-    description: `An experimental short exploring the idea that happiness, rather than success, is what truly drives us. Blending AI with traditional filmmaking and post-production, the film follows three characters in search of an emotional connection.
-
-​Credits:
-
-Concept, Direction, Editing & Online: Hubert Dłużniewski
-Visuals: AI-generated imagery (Higgsfield)
-Music: AI-generated (Suno)
-Sound: ElevenLabs`,
+    description: `An experimental short exploring the idea that happiness, rather than success, is what truly drives us. Blending AI with traditional filmmaking and post-production, the film follows three characters in search of an emotional connection.`,
     youtube: "klaLk_SQ3NY",
     credits: [
-      ["", ""]
+      ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
+      ["Visuals", "AI-generated imagery (Higgsfield)"],
+      ["Music", "AI-generated (Suno)"],
+      ["Sound", "ElevenLabs"]
     ],
     position: "center"
   },
@@ -67,18 +59,15 @@ Sound: ElevenLabs`,
     title: "JAŹNICKA Planet B",
     meta: "Music video / Direction",
     year: "",
-    description: `An experimental short exploring the idea that happiness, rather than success, is what truly drives us. Blending AI with traditional filmmaking and post-production, the film follows three characters in search of an emotional connection.
-
-​Credits:
-
-Concept, Direction, Editing & Online: Hubert Dłużniewski
-Visuals: AI-generated imagery (Higgsfield)
-Music: AI-generated (Suno)
-Sound: ElevenLabs`,
+    description: `An experimental short exploring the idea that happiness, rather than success, is what truly drives us. Blending AI with traditional filmmaking and post-production, the film follows three characters in search of an emotional connection.`,
     youtube: "TBQXugY_n5s",
     credits: [
-      ["Artist", "Jaźnicka"],
-      ["Concept, Direction, Animation", "Hubert Dłużniewski"]
+      ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
+      ["Vocal/Lyric", "Kasia Jaźnicka"],
+      ["Music", "Marcin Kuczewski, Kasia Jaźnicka"],
+      ["Production", "Marcin Kuczewski"],
+      ["Mastering", "Brad Blackwood"],
+      ["Vocal Recording/MIX", "Chris Aiken"]
     ],
     position: "center"
   },
