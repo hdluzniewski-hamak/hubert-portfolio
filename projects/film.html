@@ -119,7 +119,7 @@
       height:100%
     }
     .placeholder::after{
-      content:"▶";
+      content:"";
       position:absolute;
       left:18px;
       bottom:18px;
@@ -164,6 +164,8 @@
       .project{grid-template-columns:1fr}
       .stills-grid{grid-template-columns:1fr}
     }
+    /* v41: triangle drawn without font glyphs (iOS compatible). */
+    .placeholder::before{content:"";position:absolute;left:32px;bottom:29px;width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:7px solid white;z-index:1;pointer-events:none}
   </style>
 </head>
 <body>
