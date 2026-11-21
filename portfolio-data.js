@@ -125,6 +125,20 @@ window.PORTFOLIO_FILMS = [
     ],
     position: "center"
   }
+  {
+    slug: "planet-b",
+    image: "film-10.webp",
+    title: "OUT OF CONTROL",
+    meta: "Music video / Direction",
+    year: "",
+    description: "A hybrid project combining 3D animation with live-action footage. The video was nominated for Berlin Video Music Awards 2022.",
+    youtube: "3nZf5f63_UQ",
+    credits: [
+      ["Artist", "Jaźnicka"],
+      ["Concept, Direction, Animation", "Hubert Dłużniewski"]
+    ],
+    position: "center"
+  },
 ];
 
 /*
@@ -184,12 +198,13 @@ window.PORTFOLIO_ART = [
   { image: "art-07.webp", title: "UNTITLED 07", medium: "Oil on canvas, 50 x 70 cm" },
   { image: "art-08.webp", title: "UNTITLED 08", medium: "Pencil on paper" },
   { image: "art-09.webp", title: "UNTITLED 09", medium: "Digital painting" }
+  { image: "art-10.webp", title: "UNTITLED 10", medium: "Digital painting" }
 ];
 
 window.PORTFOLIO_SHOWREELS = [
   {
     slug: "directing",
-    image: "film-06.webp",
+    image: "directing.webp",
     title: "DIRECTING",
     description: "Short films, commercials, music videos and visual storytelling.",
     youtube: "",
@@ -199,7 +214,7 @@ window.PORTFOLIO_SHOWREELS = [
   },
   {
     slug: "animation",
-    image: "film-09.webp",
+    image: "animation.webp",
     title: "ANIMATION",
     description: "2D animation, motion design and character-driven work.",
     youtube: "",
@@ -209,7 +224,7 @@ window.PORTFOLIO_SHOWREELS = [
   },
   {
     slug: "vfx-online",
-    image: "film-01.webp",
+    image: "online.webp",
     title: "VFX / ONLINE",
     description: "Compositing, online finishing and visual effects work.",
     youtube: "",
