@@ -159,26 +159,30 @@
       if (!(reel.credits || []).length) credits.style.display = "none";
 
       
-const video = project.vimeo
-  ? `https://player.vimeo.com/video/${project.vimeo}`
-  : project.youtube
-    ? `https://www.youtube-nocookie.com/embed/${project.youtube}?rel=0&controls=1`
+
+const player = document.getElementById("reelPlayer");
+
+const video = reel.vimeo
+  ? `https://player.vimeo.com/video/${reel.vimeo}`
+  : reel.youtube
+    ? `https://www.youtube-nocookie.com/embed/${reel.youtube}?rel=0&controls=1`
     : "";
 
 if (video) {
   player.innerHTML = `
     <iframe
       src="${video}"
-      title="${project.title}"
+      title="${reel.title}"
       allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
       allowfullscreen>
     </iframe>`;
 } else {
   player.innerHTML = `
     <div class="placeholder">
-      <img src="../assets/${project.image}" alt="${project.title}">
+      <img src="../assets/${reel.image}" alt="${reel.title}">
     </div>`;
 }
+
 
     }
   </script>
