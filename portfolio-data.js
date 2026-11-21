@@ -22,7 +22,7 @@ Visuals: AI-generated imagery (Higgsfield)
 Music: AI-generated (Suno)`,
     youtube: "jMsma0EnTxQ",
     credits: [
-      ["Direction", "Hubert Dłużniewski"]
+      ["", ""]
     ],
     position: "center"
   },
@@ -32,10 +32,16 @@ Music: AI-generated (Suno)`,
     title: "MAN WITH A MASK",
     meta: "Direction / AI short film",
     year: "",
-    description: "",
-    youtube: "",
+    description: `An experimental short inspired by Oscar Wilde’s idea that a mask can reveal more truth than a face. Blending AI tools with traditional post-production techniques, I continue exploring new ways of building an emotional connection between my characters and the audience.
+
+​Credits:
+
+Concept, Direction, Editing & Online: Hubert Dłużniewski
+Visuals: AI-generated imagery (Higgsfield)
+Music: AI-generated (Suno)`,
+    youtube: "F4ASrJEk8LA",
     credits: [
-      ["Direction", "Hubert Dłużniewski"]
+      ["", ""]
     ],
     position: "center"
   },
@@ -45,20 +51,34 @@ Music: AI-generated (Suno)`,
     title: "I WOULD DANCE",
     meta: "Direction / AI short film",
     year: "",
-    description: "",
-    youtube: "",
+    description: `An experimental short exploring the idea that happiness, rather than success, is what truly drives us. Blending AI with traditional filmmaking and post-production, the film follows three characters in search of an emotional connection.
+
+​Credits:
+
+Concept, Direction, Editing & Online: Hubert Dłużniewski
+Visuals: AI-generated imagery (Higgsfield)
+Music: AI-generated (Suno)
+Sound: ElevenLabs`,
+    youtube: "klaLk_SQ3NY",
     credits: [
-      ["Direction", "Hubert Dłużniewski"]
+      ["", ""]
     ],
     position: "center"
   },
   {
     slug: "planet-b",
     image: "film-04.webp",
-    title: "PLANET B",
+    title: "JAŹNICKA Planet B",
     meta: "Music video / Direction",
     year: "",
-    description: "A concept-driven music video directed with a strong focus on visual storytelling and creative art direction. Created through a hybrid workflow combining generative AI with traditional editing, online finishing, and compositing in Adobe After Effects.",
+    description: `An experimental short exploring the idea that happiness, rather than success, is what truly drives us. Blending AI with traditional filmmaking and post-production, the film follows three characters in search of an emotional connection.
+
+​Credits:
+
+Concept, Direction, Editing & Online: Hubert Dłużniewski
+Visuals: AI-generated imagery (Higgsfield)
+Music: AI-generated (Suno)
+Sound: ElevenLabs`,
     youtube: "TBQXugY_n5s",
     credits: [
       ["Artist", "Jaźnicka"],
