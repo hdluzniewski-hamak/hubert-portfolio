@@ -21,7 +21,6 @@ window.PORTFOLIO_FILMS = [
       ["Music", "AI-generated (Suno)"],
       ["Sound", "ElevenLabs"]
     ],
-    ],
     position: "center"
   },
   {
@@ -105,8 +104,7 @@ window.PORTFOLIO_FILMS = [
     title: "QUESTIONS",
     meta: "Direction / AI short film",
     year: "",
-    description: "An original spot about the importance of asking the right questions and their impact on creativity.
-",
+    description: "An original spot about the importance of asking the right questions and their impact on creativity.",
     youtube: "",
     credits: [
       ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
