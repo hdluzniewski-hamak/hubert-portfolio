@@ -126,7 +126,7 @@ window.PORTFOLIO_FILMS = [
     position: "center"
   },
   {
-    slug: "planet-b",
+    slug: "out-of-control",
     image: "film-10.webp",
     title: "OUT OF CONTROL",
     meta: "Music video / Direction",
