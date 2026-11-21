@@ -158,21 +158,28 @@
       });
       if (!(reel.credits || []).length) credits.style.display = "none";
 
-      const player = document.getElementById("reelPlayer");
-      if (reel.youtube) {
-        player.innerHTML = `
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/${reel.youtube}?rel=0&modestbranding=1&controls=1"
-            title="${reel.title}"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>`;
-      } else {
-        player.innerHTML = `
-          <div class="placeholder">
-            <img src="../assets/${reel.image}" alt="${reel.title}">
-          </div>`;
-      }
+      
+const video = project.vimeo
+  ? `https://player.vimeo.com/video/${project.vimeo}`
+  : project.youtube
+    ? `https://www.youtube-nocookie.com/embed/${project.youtube}?rel=0&controls=1`
+    : "";
+
+if (video) {
+  player.innerHTML = `
+    <iframe
+      src="${video}"
+      title="${project.title}"
+      allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
+      allowfullscreen>
+    </iframe>`;
+} else {
+  player.innerHTML = `
+    <div class="placeholder">
+      <img src="../assets/${project.image}" alt="${project.title}">
+    </div>`;
+}
+
     }
   </script>
 </body>
