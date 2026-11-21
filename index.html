@@ -261,16 +261,16 @@
       border-top:1px solid var(--line)
     }
     .about-photo{
-      position:relative;
-      aspect-ratio:557 / 700;
-      min-height:0
+      min-width:0;
+      width:100%;
+      align-self:start
     }
     .about-photo img{
       display:block;
-      position:absolute;
-      inset:0;
+      position:static;
       width:100%;
-      height:100%;
+      height:auto;
+      aspect-ratio:557 / 700;
       object-fit:cover
     }
     .about-copy{
@@ -316,6 +316,13 @@
     .contact-big{font-size:clamp(42px,6vw,88px);letter-spacing:-.045em;line-height:.95;color:var(--heading)}
     .contact-links{font-size:9px;line-height:2.15;color:var(--muted);letter-spacing:.16em;text-transform:uppercase}
 
+    /* v39: two columns before the three-column ABOUT layout becomes cramped. */
+    @media (min-width:901px) and (max-width:1400px){
+      .about{grid-template-columns:minmax(0,0.9fr) minmax(0,1.6fr);column-gap:clamp(28px,4vw,60px);row-gap:22px}
+      .about-photo{grid-column:1;grid-row:1 / span 2;align-self:start}
+      .about-copy{grid-column:2;grid-row:1;gap:clamp(20px,2vw,34px)}
+      .about-side{grid-column:2;grid-row:2;justify-self:stretch}
+    }
     @media (max-width:900px){
       .nav{gap:16px}
       .hero{min-height:86vh;padding-top:90px}
@@ -329,9 +336,11 @@
       .art-grid{columns:2;column-gap:10px}
       .art-item{margin-bottom:10px}
       .about{grid-template-columns:1fr;gap:40px}
-      .about-photo{max-width:440px}
-      .about-copy{gap:24px}
+      .about-photo{max-width:440px;grid-row:auto}
+      .about-copy{grid-column:auto;grid-row:auto;gap:24px}
       .about-copy h2{margin:12px 0 8px}
+      .about-copy p{text-align:left}
+      .about-side{grid-column:auto;grid-row:auto}
       footer{grid-template-columns:1fr}
     }
     @media (max-width:620px){
@@ -437,8 +446,8 @@
       object-fit:contain;
       display:block
     }
-    @media (max-width:900px){
-      .contact-section{grid-template-columns:1fr}
+    @media (max-width:1100px){
+      .contact-section{grid-template-columns:minmax(0,1fr)}
       .contact-image{
         justify-self:end;
         width:min(100%, 520px);
