@@ -218,7 +218,7 @@ window.PORTFOLIO_FILMS = [
       ["Mix / Mastering", "Rafał Smoleń"],
       ["Stylist", "Renata Miklewska"],
       ["Make Up", "Dagmara Śrama-Pieńkowska"],
-      ["Hair", "Kamil Pecka /J aga Hupało Born To Create"]
+      ["Hair", "Kamil Pecka /Jaga Hupało Born To Create"]
       
     ],
     position: "center"
