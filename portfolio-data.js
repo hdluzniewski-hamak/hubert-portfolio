@@ -133,7 +133,7 @@ window.PORTFOLIO_FILMS = [
     title: "DOROTHY Christmas Animation",
     meta: "Direction / 2D animation",
     year: "",
-    description: "A short animated movie for TELEVISOR STUDIO. A moment before christmas eve, little girl named Dorotka hears a strange sounds...",
+    description: "A short animated film for Televisor Studio. Just before Christmas Eve, a little girl named Dorotka hears strange sounds...",
     youtube: "EfSza2HUw2E",
     credits: [
       ["Directing, animation, concept art", "Hubert Dłużniewski"],
@@ -177,7 +177,8 @@ window.PORTFOLIO_FILM_CAPTIONS = {
   "digital-visas-discriminations": "Direction / 2D animation",
   "questions": "Direction / AI short film",
   "suntago-crocodile-island": "Direction / Commercial",
-  "dorothy-christmas-animation": "Direction / 2D animation"
+  "dorothy-christmas-animation": "Direction / 2D animation",
+  "out-of-control": "Music video / Direction"
 };
 
 window.PORTFOLIO_FILM_ORDER = [
@@ -189,7 +190,8 @@ window.PORTFOLIO_FILM_ORDER = [
   "digital-visas-discriminations",
   "questions",
   "suntago-crocodile-island",
-  "dorothy-christmas-animation"
+  "dorothy-christmas-animation",
+  "out-of-control"
 ];
 
 // Apply both sets of edits consistently across the homepage and film detail pages.
