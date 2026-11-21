@@ -130,13 +130,14 @@ window.PORTFOLIO_FILMS = [
   {
     slug: "dorothy-christmas-animation",
     image: "film-09.webp",
-    title: "DOROTHY - CHRISTMAS ANIMATION",
+    title: "DOROTHY Christmas Animation",
     meta: "Direction / 2D animation",
     year: "",
-    description: "",
-    youtube: "",
+    description: "A short animated movie for TELEVISOR STUDIO. A moment before christmas eve, little girl named Dorotka hears a strange sounds...",
+    youtube: "EfSza2HUw2E",
     credits: [
-      ["Direction", "Hubert Dłużniewski"]
+      ["Directing, animation, concept art", "Hubert Dłużniewski"],
+      ["Composer", "Marcin Kuczewski"]
     ],
     position: "center"
   },
