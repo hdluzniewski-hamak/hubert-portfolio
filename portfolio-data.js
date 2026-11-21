@@ -243,7 +243,7 @@ window.PORTFOLIO_SHOWREELS = [
     title: "ANIMATION",
     description: "2D animation, motion design and character-driven work.",
     youtube: "",
-    vimeo: "265749506?fl=pl&fe=vl",
+    vimeo: "pl&fe=vl",
     credits: [
       ["Showreel", "Animation"]
     ]
