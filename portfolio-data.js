@@ -16,8 +16,8 @@ window.PORTFOLIO_FILMS = [
     description: "A contemporary interpretation of Homer’s Odyssey — a journey across the sea, through temptation and danger, where one direction remains more important than all others: the way home. Blending cinematic storytelling, AI tools and traditional post-production techniques, the film reimagines the ancient myth through a modern visual language.",
     youtube: "jMsma0EnTxQ",
     credits: [
-      ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"]
-      ["Visuals", "AI-generated imagery (Higgsfield)"]
+      ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
+      ["Visuals", "AI-generated imagery (Higgsfield)"],
       ["Music", "AI-generated (Suno)"]
     ],
     position: "center"
