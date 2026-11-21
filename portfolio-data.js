@@ -181,6 +181,27 @@ window.PORTFOLIO_FILMS = [
     ],
     position: "center"
   },
+  {
+    slug: "bylo-by-lepiej",
+    image: "film-11.webp",
+    title: "JAŹNICKA Było by lepiej",
+    meta: "Music video / Direction",
+    year: "",
+    description: "An atmospheric journey where nature becomes a stage for surreal and unexplained events.",
+    youtube: "3nZf5f63_UQ",
+    credits: [
+      ["Concept, Directing, VFX/Online", "Hubert Dłużniewski"],
+      ["Grading", "Pan Przemysław Resil"],
+      ["Vocal/Lyric", "Kasia Jaźnicka"],
+      ["Music", "Robert Purzycki, Igor Szulc, Radek Bednarek, Piotr Kołacz, Marcin Wippich"],
+      ["Production", "Marcin Kuczewski"],
+      ["Mix / Mastering", "Rafał Smoleń"],
+      ["Vocal Recording/MIX", "Chris Aiken"],
+      ["Actors", "Krystyna Lama Szydłowska, Konrad Cichoń, Jaźnicka"]
+      
+    ],
+    position: "center"
+  },
 ];
 
 /*
