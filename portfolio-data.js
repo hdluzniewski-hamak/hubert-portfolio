@@ -162,6 +162,25 @@ window.PORTFOLIO_FILMS = [
     ],
     position: "center"
   },
+   {
+    slug: "robs-bike",
+    image: "film-11.webp",
+    title: "ROB'S BIKE",
+    meta: "2D Animation / Animation / Direction",
+    year: "",
+    description: "Created to highlight the real dangers of cycling under the influence, promoting the message “Drank? Don’t Ride!” for the National Road Safety Center.",
+    youtube: "",
+       vimeo: "265749506",
+    credits: [
+      ["Design & Direction of animation & Animation", "Hubert Dłużniewski"],
+      ["Support in animation / 3D", "Jakub Szczęśniak, Igor Mykhailov, Michał Bińkowski, Dominik Kosik, Karol Kisiel"],
+      ["Sound", "Efektura"],
+      ["Client", "KCBRD (Krajowe Centrum Bezpieczeństwa Ruchu Drogowego)"],
+      ["Agency", "BBDO"]
+      
+    ],
+    position: "center"
+  },
 ];
 
 /*
