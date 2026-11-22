@@ -1,4 +1,4 @@
-/* ART CATEGORIES — v42
+cti/* ART CATEGORIES — v42
    Change cover/title/order in the category array below.
    Add gallery images into PORTFOLIO_ART_WORKS (examples in guide).
    Do NOT overwrite your existing portfolio-data.js.
@@ -335,9 +335,73 @@ window.PORTFOLIO_ART_WORKS = [
   // ==========================================
   {
     category: "pencil",
-    image: "drawing-01.webp",
-    title: "UNTITLED",
-    medium: "Pencil on paper, 21 × 30 cm",
+    image: "detective.webp",
+    title: "DETECTIVE",
+    medium: "Pencil on paper",
      status: "Available"
-  }
+  },
+     {
+    category: "pencil",
+    image: "hostess.webp",
+    title: "HOSTESS",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+     {
+    category: "pencil",
+    image: "mechanic.webp",
+    title: "MECHANIC",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+     {
+    category: "pencil",
+    image: "witness.webp",
+    title: "WITNESS",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+     {
+    category: "pencil",
+    image: "observer.webp",
+    title: "OBSERVER",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+     {
+    category: "pencil",
+    image: "widow.webp",
+    title: "WIDOW",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+     {
+    category: "pencil",
+    image: "doctor.webp",
+    title: "DOCTOR",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+   {
+    category: "pencil",
+    image: "apothecary.webp",
+    title: "APOTHECARY",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+     {
+    category: "pencil",
+    image: "guest.webp",
+    title: "GUEST",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+   {
+    category: "pencil",
+    image: "tourist.webp",
+    title: "TOURIST",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+  
 ];
