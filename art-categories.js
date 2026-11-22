@@ -17,9 +17,9 @@ window.PORTFOLIO_ART_CATEGORIES = [
 */
 window.PORTFOLIO_ART_WORKS = [
 
-    // ==========================================
-  // OIL
-  // ==========================================
+// ==========================================
+// OIL
+// ==========================================
 
    {
     category: "oil-paintings",
@@ -106,9 +106,9 @@ window.PORTFOLIO_ART_WORKS = [
       status: "Available"
   },
 
-    // ==========================================
-  // INK
-  // ==========================================
+// ==========================================
+// INK
+// ==========================================
 
  {
     category: "line-art",
@@ -183,7 +183,7 @@ window.PORTFOLIO_ART_WORKS = [
    {
     category: "line-art",
     image: "scate.webp",
-    title: "SCATE BOARD",
+    title: "SKATEBOARD",
     medium: "Ink on paper, 15 × 20 cm",
       status: "Available"
   },
@@ -215,125 +215,121 @@ window.PORTFOLIO_ART_WORKS = [
     medium: "Ink on paper, 15 × 20 cm",
       status: "Available"
   },
-    // ==========================================
-  // ILUSTRATION
-  // ==========================================
+// ==========================================
+// ILUSTRATION
+// ==========================================
 {
     category: "digital-illustrations",
     image: "cube.webp",
     title: "CUBE",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "monkey.webp",
     title: "HAPPY MONKEY",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a printt"
          },
    {
     category: "digital-illustrations",
     image: "dude.webp",
     title: "DUDE",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "yoga.webp",
     title: "YOGA CLASS",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "run.webp",
     title: "RUN",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "giraffe.webp",
     title: "GIRAFFE",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "january.webp",
     title: "JANUARY",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "evening.webp",
     title: "EVENING",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "owl.webp",
     title: "OWL",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "fog.webp",
     title: "FOG",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "forest.webp",
     title: "FOREST",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "game.webp",
     title: "GAME OVER",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "fist.webp",
     title: "FIST",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "underground.webp",
     title: "UNDERGROUND",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "shadows.webp",
     title: "SHADOWS",
     medium: "digital painting",
-      status: "Available in print"
+      status: "Available as a print"
          },
 
 
-    // ==========================================
-  // PENCIL
-  // ==========================================
+// ==========================================
+// PENCIL
+// ==========================================
 
-
-    // ==========================================
-  // DIGITAL PORTRAITS
-  // ==========================================
-  {
+{
     category: "pencil",
     image: "detective.webp",
     title: "DETECTIVE",
@@ -403,5 +399,9 @@ window.PORTFOLIO_ART_WORKS = [
     medium: "Pencil on paper",
      status: "Available"
   }
+// ==========================================
+// DIGITAL PORTRAITS
+// ==========================================
+  
   
 ];
