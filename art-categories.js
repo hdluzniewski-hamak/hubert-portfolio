@@ -47,7 +47,7 @@ window.PORTFOLIO_ART_WORKS = [
   },
    {
     category: "oil-paintings",
-    image: "boy_on_th_chair.webp",
+    image: "boy_on_the_chair.webp",
     title: "BOY ON THE CHAIR",
     medium: "Oil on canvas, 50 × 80 cm",
       status: "Available"
@@ -68,8 +68,8 @@ window.PORTFOLIO_ART_WORKS = [
   },
     {
     category: "oil-paintings",
-    image: "lizbona.webp",
-    title: "LIZBONA",
+    image: "lisbona.webp",
+    title: "LISBON",
     medium: "Oil on canvas, 40 × 50 cm",
       status: "Available"
   },
@@ -89,7 +89,7 @@ window.PORTFOLIO_ART_WORKS = [
   },
    {
     category: "oil-paintings",
-    image: "sparrow.webp",
+    image: "sparow.webp",
     title: "SPARROW",
     medium: "Oil on canvas, 30 × 40 cm",
       status: "Available"
