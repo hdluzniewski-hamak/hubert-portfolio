@@ -572,6 +572,20 @@ window.PORTFOLIO_ART_WORKS = [
   },
    {
     category: "digital-portraits",
+    image: "benny.webp",
+    title: "Thomas Brodie-Sangster / Benny Wats / The Queen's gambit - Netflix Series",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "townes.webp",
+    title: "Jacob Fortune-Lloyd / D. L. Townes / The Queen's gambit - Netflix Series",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
     image: "elisabeth.webp",
     title: "ELISABETH",
     medium: "Photoshop / Digital portrait",
