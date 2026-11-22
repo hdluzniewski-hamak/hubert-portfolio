@@ -48,14 +48,20 @@ h1{font-family:"Montserrat",Arial,sans-serif;font-size:clamp(40px,6vw,90px);line
 @media(max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.top{align-items:flex-start}.nav{gap:10px;flex-wrap:wrap;justify-content:flex-end}.gallery{grid-template-columns:1fr}main{padding-top:40px}}
 
+
 .art-nav {
+  position: sticky;
+  top: 46px;
+  z-index: 19;
   display: flex;
   flex-wrap: wrap;
   gap: 12px 24px;
   margin: 0 0 36px;
-  padding-bottom: 18px;
+  padding: 16px 0 18px;
+  background: var(--bg);
   border-bottom: 1px solid var(--line);
 }
+
 
 .art-nav a {
   font-size: 10px;
