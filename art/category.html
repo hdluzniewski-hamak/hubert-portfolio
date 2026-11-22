@@ -50,7 +50,17 @@ else{
     const caption=document.createElement('figcaption');
     const name=document.createElement('div');name.className='work-title';name.textContent=work.title||'';
     const medium=document.createElement('div');medium.className='work-medium';medium.textContent=work.medium||'';
-    caption.append(name,medium);figure.append(im,caption);gallery.appendChild(figure);
+    caption.append(name, medium);
+
+if (work.status) {
+  const status = document.createElement('div');
+  status.className = 'work-status';
+  status.textContent = work.status;
+  caption.appendChild(status);
+}
+
+figure.append(im, caption);
+gallery.appendChild(figure);
   });
   empty.hidden=works.length>0;
 }
