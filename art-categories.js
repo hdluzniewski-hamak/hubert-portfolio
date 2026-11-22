@@ -415,6 +415,142 @@ window.PORTFOLIO_ART_WORKS = [
     title: "JULIA",
     medium: "Procreate / Digital portrait",
      status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "irenka.webp",
+    title: "IRENKA",
+    medium: "Procreate / Digital portrait",
+     status: "No longer available"
+  },
+   {
+    category: "digital-portraits",
+    image: "self.webp",
+    title: "SELF PORTRAIT",
+    medium: "Procreate / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "sarah.webp",
+    title: "SARAH",
+    medium: "Procreate / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "mask.webp",
+    title: "SLEEP MASK",
+    medium: "Procreate / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "heart.webp",
+    title: "HEART",
+    medium: "Procreate / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "bun.webp",
+    title: "BUN MODEL",
+    medium: "Procreate / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "servdaliza.webp",
+    title: "SERVDALIZA",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "earrings.webp",
+    title: "EARRINGS",
+    medium: "Procreate / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "diego.webp",
+    title: "DIEGO",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "goldee.webp",
+    title: "GOLDEE",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "scar.webp",
+    title: "SCAR",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "sunday.webp",
+    title: "SUNDAY",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "newyear.webp",
+    title: "NEW YEAR LADY",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "midas.webp",
+    title: "MIDAS",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "prince.webp",
+    title: "PRINCE",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "nicole.webp",
+    title: "NICOLE",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "harry.webp",
+    title: "HARRY",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "donald.webp",
+    title: "DONALD",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "elisabeth.webp",
+    title: "ELISABETH",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
   }
+   
+   
+   
   
 ];
