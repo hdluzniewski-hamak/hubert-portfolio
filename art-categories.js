@@ -24,11 +24,81 @@ window.PORTFOLIO_ART_WORKS = [
     medium: "Oil on canvas, 30 × 40 cm",
       status: "No longer available"
   },
+    {
+    category: "oil-paintings",
+    image: "dance.webp",
+    title: "DANCE",
+    medium: "Oil on canvas, 80 × 100 cm",
+      status: "No longer available"
+  },
+   {
+    category: "oil-paintings",
+    image: "athena.webp",
+    title: "ATHENA",
+    medium: "Oil on canvas, 60 × 80 cm",
+      status: "Available"
+  },
+   {
+    category: "oil-paintings",
+    image: "pylons.webp",
+    title: "PYLONS",
+    medium: "Oil on canvas, 80 × 100 cm",
+      status: "No longer available"
+  },
+   {
+    category: "oil-paintings",
+    image: "boy_on_th_chair.webp",
+    title: "BOY ON THE CHAIR",
+    medium: "Oil on canvas, 50 × 80 cm",
+      status: "Available"
+  },
    {
     category: "oil-paintings",
     image: "libra.webp",
     title: "LIBRA",
     medium: "Oil on canvas, 30 × 40 cm",
+      status: "Available"
+  },
+   {
+    category: "oil-paintings",
+    image: "cows.webp",
+    title: "COWS",
+    medium: "Oil on canvas, 100 × 80 cm",
+      status: "No longer available"
+  },
+    {
+    category: "oil-paintings",
+    image: "lizbona.webp",
+    title: "LIZBONA",
+    medium: "Oil on canvas, 40 × 50 cm",
+      status: "Available"
+  },
+   {
+    category: "oil-paintings",
+    image: "wristband.webp",
+    title: "WRISTBAND",
+    medium: "Oil on canvas, 60 × 80 cm",
+      status: "No longer available"
+  },
+   {
+    category: "oil-paintings",
+    image: "george.webp",
+    title: "GEORGE",
+    medium: "Oil on canvas, 80 × 120 cm",
+      status: "Available"
+  },
+   {
+    category: "oil-paintings",
+    image: "sparrow.webp",
+    title: "SPARROW",
+    medium: "Oil on canvas, 30 × 40 cm",
+      status: "Available"
+  },
+   {
+    category: "oil-paintings",
+    image: "heir.webp",
+    title: "HEIR",
+    medium: "Oil on canvas, 60 × 80 cm",
       status: "Available"
   },
   {
