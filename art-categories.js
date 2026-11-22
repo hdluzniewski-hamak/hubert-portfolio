@@ -601,7 +601,42 @@ window.PORTFOLIO_ART_WORKS = [
    {
     category: "digital-portraits",
     image: "elisabeth.webp",
-    title: "ELISABETH",
+    title: "Olivia Colman / Queen Elisabeth II / The Crown",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "margaretcrown.webp",
+    title: "Helena Bonham Carter / Princess Margaret / The Crown",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "prince.webp",
+    title: "Josh O'Connor / Prince Charles / The Crown",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "anna.webp",
+    title: "Erin Doherty / Princess Anne / The Crown",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "filip.webp",
+    title: "Tobias Menzies / Prince Philip, Duke of Edinburgh / The Crown",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "diana.webp",
+    title: "Emma Corrin / Princess Diana / The Crown",
     medium: "Photoshop / Digital portrait",
      status: "Available as a print"
   }
