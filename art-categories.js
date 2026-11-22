@@ -551,6 +551,13 @@ window.PORTFOLIO_ART_WORKS = [
   },
    {
     category: "digital-portraits",
+    image: "marcin.webp",
+    title: "Marcin Dorociński / Wasilij Borgow / The Queen's gambit - Netflix Series",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
     image: "elisabeth.webp",
     title: "ELISABETH",
     medium: "Photoshop / Digital portrait",
