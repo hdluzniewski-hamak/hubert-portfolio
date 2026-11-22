@@ -47,14 +47,55 @@ h1{font-family:"Montserrat",Arial,sans-serif;font-size:clamp(40px,6vw,90px);line
 .empty{border-top:1px solid var(--line);padding-top:24px;color:var(--muted);font-size:12px;letter-spacing:.03em}
 @media(max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.top{align-items:flex-start}.nav{gap:10px;flex-wrap:wrap;justify-content:flex-end}.gallery{grid-template-columns:1fr}main{padding-top:40px}}
+
+.art-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin: 0 0 36px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--line);
+}
+
+.art-nav a {
+  font-size: 10px;
+  letter-spacing: .12em;
+  color: var(--muted);
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+  text-transform: uppercase;
+}
+
+.art-nav a:hover,
+.art-nav a.active {
+  color: var(--heading);
+  border-bottom-color: currentColor;
+}
+
 </style>
 </head>
 <body>
 <header class="top"><a class="brand" href="../index.html">Hubert Dłużniewski</a><nav class="nav"><a href="../index.html#film">Film</a><a href="../index.html#art">Art</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></nav></header>
-<main><a class="back" href="../index.html#art">← Back to Art</a><div class="kicker">Selected works</div><h1 id="categoryTitle">ART</h1><div class="gallery" id="gallery"></div><p class="empty" id="empty" hidden>Selected works will be added here soon.</p></main>
+<main><a class="back" href="../index.html#art">← Back to Art</a><div class="kicker">Selected works</div><h1 id="categoryTitle">ART</h1><nav class="art-nav" id="artNav" aria-label="Art galleries"></nav><div class="gallery" id="gallery"></div><p class="empty" id="empty" hidden>Selected works will be added here soon.</p></main>
 <script src="../art-categories.js?v=42"></script>
 <script>
 const slug=new URLSearchParams(location.search).get('id');
+  
+const artNav = document.getElementById('artNav');
+
+(window.PORTFOLIO_ART_CATEGORIES || []).forEach(item => {
+  const link = document.createElement('a');
+  link.href = 'category.html?id=' + encodeURIComponent(item.slug);
+  link.textContent = item.title;
+
+  if (item.slug === slug) {
+    link.classList.add('active');
+    link.setAttribute('aria-current', 'page');
+  }
+
+  artNav.appendChild(link);
+});
+
 const category=(window.PORTFOLIO_ART_CATEGORIES||[]).find(item=>item.slug===slug);
 const title=document.getElementById('categoryTitle');
 const gallery=document.getElementById('gallery');
