@@ -453,6 +453,13 @@ window.PORTFOLIO_ART_WORKS = [
   },
    {
     category: "digital-portraits",
+    image: "magnate.webp",
+    title: "HER MAJESTY",
+    medium: "Procreate / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
     image: "bun.webp",
     title: "BUN MODEL",
     medium: "Procreate / Digital portrait",
