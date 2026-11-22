@@ -7,8 +7,8 @@ window.PORTFOLIO_ART_CATEGORIES = [
   {slug:"oil-paintings",title:"OIL PAINTINGS",image:"art-cover-oil.webp"},
   {slug:"line-art",title:"LINE ART",image:"art-cover-line.webp"},
   {slug:"digital-illustrations",title:"DIGITAL ILLUSTRATIONS",image:"art-cover-illustrations.webp"},
-  {slug:"digital-portraits",title:"DIGITAL PORTRAITS",image:"art-cover-portraits.webp"},
-  {slug:"pencil",title:"PENCIL",image:"art-cover-pencil.webp"}
+  {slug:"pencil",title:"PENCIL",image:"art-cover-pencil.webp"},
+   {slug:"digital-portraits",title:"DIGITAL PORTRAITS",image:"art-cover-portraits.webp"}
 ];
 
 /* Add finished artworks here when ready.
@@ -222,105 +222,105 @@ window.PORTFOLIO_ART_WORKS = [
     category: "digital-illustrations",
     image: "cube.webp",
     title: "CUBE",
-    medium: "digital painting",
+    medium: "Illustrator / Photoshop / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "monkey.webp",
     title: "HAPPY MONKEY",
-    medium: "digital painting",
+    medium: "Procreate / Digital painting",
       status: "Available as a printt"
          },
    {
     category: "digital-illustrations",
     image: "dude.webp",
     title: "DUDE",
-    medium: "digital painting",
+    medium: "Procreate / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "yoga.webp",
     title: "YOGA CLASS",
-    medium: "digital painting",
+    medium: "Procreate / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "run.webp",
     title: "RUN",
-    medium: "digital painting",
+    medium: "Procreate / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "giraffe.webp",
     title: "GIRAFFE",
-    medium: "digital painting",
+    medium: "Procreate / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "january.webp",
     title: "JANUARY",
-    medium: "digital painting",
+    medium: "Procreate / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "evening.webp",
     title: "EVENING",
-    medium: "digital painting",
+    medium: "Procreate / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "owl.webp",
     title: "OWL",
-    medium: "digital painting",
+    medium: "Photoshop / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "fog.webp",
     title: "FOG",
-    medium: "digital painting",
+    medium: "Procreate / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "forest.webp",
     title: "FOREST",
-    medium: "digital painting",
+    medium: "Procreate / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "game.webp",
     title: "GAME OVER",
-    medium: "digital painting",
+    medium: "Photoshop / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "fist.webp",
     title: "FIST",
-    medium: "digital painting",
+    medium: "Photoshop / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "underground.webp",
     title: "UNDERGROUND",
-    medium: "digital painting",
+    medium: "Photoshop / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "shadows.webp",
     title: "SHADOWS",
-    medium: "digital painting",
+    medium: "Photoshop / Digital painting",
       status: "Available as a print"
          },
 
@@ -398,10 +398,23 @@ window.PORTFOLIO_ART_WORKS = [
     title: "TOURIST",
     medium: "Pencil on paper",
      status: "Available"
-  }
+  },
 // ==========================================
 // DIGITAL PORTRAITS
 // ==========================================
-  
+   {
+    category: "digital-portraits",
+    image: "afro.webp",
+    title: "AFRO",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "julia.webp",
+    title: "JULIA",
+    medium: "Procreate / Digital portrait",
+     status: "Available as a print"
+  }
   
 ];
