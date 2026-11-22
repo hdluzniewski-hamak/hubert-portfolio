@@ -531,7 +531,21 @@ window.PORTFOLIO_ART_WORKS = [
    {
     category: "digital-portraits",
     image: "nicole.webp",
-    title: "NICOLE",
+    title: "Nicole Kidman / Grace Fraser / The Undoing",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "hue.webp",
+    title: "Hugh Grant / Jonathan Fraser / The Undoing ",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "donald.webp",
+    title: "Donald Sutherland / Franklin Reinhardt / The Undoing ",
     medium: "Photoshop / Digital portrait",
      status: "Available as a print"
   },
@@ -539,13 +553,6 @@ window.PORTFOLIO_ART_WORKS = [
     category: "digital-portraits",
     image: "harry.webp",
     title: "Hatty Melling / Harry Beltic / The Queen's gambit - Netflix Series",
-    medium: "Photoshop / Digital portrait",
-     status: "Available as a print"
-  },
-   {
-    category: "digital-portraits",
-    image: "donald.webp",
-    title: "DONALD",
     medium: "Photoshop / Digital portrait",
      status: "Available as a print"
   },
@@ -565,7 +572,7 @@ window.PORTFOLIO_ART_WORKS = [
   },
    {
     category: "digital-portraits",
-    image: "alma.webp",
+    image: "mrsalma.webp",
     title: "Marielle Heller / Alma Wheatley / The Queen's gambit - Netflix Series",
     medium: "Photoshop / Digital portrait",
      status: "Available as a print"
@@ -574,6 +581,13 @@ window.PORTFOLIO_ART_WORKS = [
     category: "digital-portraits",
     image: "benny.webp",
     title: "Thomas Brodie-Sangster / Benny Wats / The Queen's gambit - Netflix Series",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "jolane.webp",
+    title: "Moses Ingram / Jolene / The Queen's gambit - Netflix Series",
     medium: "Photoshop / Digital portrait",
      status: "Available as a print"
   },
