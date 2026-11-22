@@ -293,7 +293,7 @@ window.PORTFOLIO_SHOWREELS = [
     image: "directing.webp",
     title: "DIRECTOR'S REEL Selected works",
     description: "Live-action footage, animation 2D, and animation 3D come together in a single visual narrative. A reflection of my way of thinking through images and directing beyond the boundaries of technique.",
-    youtube: "",
+    youtube: "LAnrxyZA2gs",
     credits: [
       ["Showreel", "Directing"]
     ]
@@ -314,7 +314,7 @@ window.PORTFOLIO_SHOWREELS = [
     image: "online.webp",
     title: "ONLINE / VFX Compositing",
     description: "A collection of online and compositing work where live-action, CGI and visual effects merge into a unified visual language.",
-    youtube: "",
+    youtube: "e6HWtgRhSds",
     credits: [
       ["Showreel", "VFX / Online"]
     ]
