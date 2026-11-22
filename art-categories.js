@@ -565,8 +565,8 @@ window.PORTFOLIO_ART_WORKS = [
   },
    {
     category: "digital-portraits",
-    image: "shaibel.webp",
-    title: "Bill Camp / Mr Shaibel / The Queen's gambit - Netflix Series",
+    image: "alma.webp",
+    title: "Marielle Heller / Alma Wheatley / The Queen's gambit - Netflix Series",
     medium: "Photoshop / Digital portrait",
      status: "Available as a print"
   },
