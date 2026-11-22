@@ -114,7 +114,28 @@ window.PORTFOLIO_ART_WORKS = [
     category: "line-art",
     image: "acrobatic.webp",
     title: "ACROBATIC",
-    medium: "Ink on paper, 30 × 40 cm",
+    medium: "Ink on paper, 15 × 21 cm",
+      status: "No longer available"
+  },
+   {
+    category: "line-art",
+    image: "javier.webp",
+    title: "JAVIER",
+    medium: "Ink on paper, 14 × 21 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "spell.webp",
+    title: "SPELL",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "javier.webp",
+    title: "JAVIER",
+    medium: "Ink on paper, 14 × 21 cm",
       status: "Available"
   },
     // ==========================================
