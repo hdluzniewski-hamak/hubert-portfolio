@@ -19,14 +19,23 @@ window.PORTFOLIO_ART_WORKS = [
 
    {
     category: "oil-paintings",
+    image: "focus.webp",
+    title: "FOCUS",
+    medium: "Oil on canvas, 30 × 40 cm",
+      status: "No longer available"
+  },
+   {
+    category: "oil-paintings",
     image: "libra.webp",
     title: "LIBRA",
-    medium: "Oil on canvas, 30 × 40 cm"
+    medium: "Oil on canvas, 30 × 40 cm",
+      status: "Available"
   },
   {
     category: "pencil",
     image: "drawing-01.webp",
     title: "UNTITLED",
-    medium: "Pencil on paper, 21 × 30 cm"
+    medium: "Pencil on paper, 21 × 30 cm",
+     status: "Available"
   }
 ];
