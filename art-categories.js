@@ -220,6 +220,13 @@ window.PORTFOLIO_ART_WORKS = [
   // ==========================================
 {
     category: "digital-illustrations",
+    image: "cube.webp",
+    title: "CUBE",
+    medium: "digital painting",
+      status: "Available in print"
+         },
+   {
+    category: "digital-illustrations",
     image: "monkey.webp",
     title: "HAPPY MONKEY",
     medium: "digital painting",
@@ -290,7 +297,7 @@ window.PORTFOLIO_ART_WORKS = [
          },
    {
     category: "digital-illustrations",
-    image: "gamee.webp",
+    image: "game.webp",
     title: "GAME OVER",
     medium: "digital painting",
       status: "Available in print"
@@ -309,6 +316,14 @@ window.PORTFOLIO_ART_WORKS = [
     medium: "digital painting",
       status: "Available in print"
          },
+   {
+    category: "digital-illustrations",
+    image: "shadows.webp",
+    title: "SHADOWS",
+    medium: "digital painting",
+      status: "Available in print"
+         },
+
 
     // ==========================================
   // PENCIL
