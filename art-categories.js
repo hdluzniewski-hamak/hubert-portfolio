@@ -218,7 +218,12 @@ window.PORTFOLIO_ART_WORKS = [
     // ==========================================
   // ILUSTRATION
   // ==========================================
-
+{
+    category: "illustrations",
+    image: "monkey.webp",
+    title: "HAPPY MONKEY",
+    medium: "digital painting",
+      status: "Available in print"
 
     // ==========================================
   // PENCIL
