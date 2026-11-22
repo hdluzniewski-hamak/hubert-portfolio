@@ -547,6 +547,58 @@
     @media (max-width:620px){
       .hero h1{font-size:clamp(20px,6.8vw,42px);letter-spacing:.055em;line-height:1.06;white-space:nowrap}
     }
+
+    /* v42 — ART: five category covers, with the same 30px circle as FILM. */
+    .art-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:14px;
+      columns:auto;
+    }
+    .art-category{
+      position:relative;
+      display:block;
+      min-width:0;
+      aspect-ratio:1 / 1;
+      margin:0;
+      overflow:hidden;
+      background:#ddd;
+      isolation:isolate;
+    }
+    .art-category img{
+      display:block;
+      width:100%;height:100%;
+      object-fit:cover;
+      transition:transform .6s cubic-bezier(.2,.7,.2,1),filter .5s;
+    }
+    .art-category:hover img{transform:scale(1.025);filter:brightness(.84)}
+    .art-category-overlay{
+      position:absolute;inset:0;
+      display:flex;align-items:end;justify-content:space-between;gap:12px;
+      padding:22px;
+      color:white;
+      background:linear-gradient(180deg,transparent 48%,rgba(0,0,0,.73) 100%);
+    }
+    .art-category-title{
+      margin:0;font-size:16px;line-height:1.15;font-weight:400;
+      letter-spacing:.015em;text-transform:uppercase;
+    }
+    .art-category-arrow{
+      flex:0 0 30px;width:30px;height:30px;
+      border:1px solid rgba(255,255,255,.95);
+      border-radius:50%;display:grid;place-items:center;
+      transition:transform .22s ease;
+    }
+    .art-category-arrow::before{
+      content:"";display:block;width:7px;height:7px;
+      border-top:1px solid currentColor;border-right:1px solid currentColor;
+      transform:translate(-1px,1px) rotate(45deg);
+    }
+    .art-category:hover .art-category-arrow{transform:scale(1.28)}
+    .art-category:focus-visible{outline:2px solid var(--heading);outline-offset:3px}
+    @media(max-width:900px){.art-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+    @media(max-width:620px){.art-grid{grid-template-columns:1fr;gap:12px}}
+    @media(hover:none){.art-category-overlay{opacity:1}}
   </style>
 </head>
 <body>
@@ -692,6 +744,7 @@
 
   <!-- Portfolio content data -->
   <script src="portfolio-data.js?v=38"></script>
+  <script src="art-categories.js?v=42"></script>
 
   <script>
     const filmGrid = document.getElementById("filmGrid");
@@ -714,17 +767,27 @@
     });
 
     const artGrid = document.getElementById("artGrid");
-    const artworks = window.PORTFOLIO_ART || [];
+    const artCategories = window.PORTFOLIO_ART_CATEGORIES || [];
 
-    artworks.forEach((artwork) => {
-      const item = document.createElement("article");
-      item.className = "art-item";
-      item.innerHTML = `
-        <img src="assets/${artwork.image}" alt="${artwork.title}">
-        <div class="art-overlay">
-          <div class="art-title">${artwork.title}</div>
-          <div class="art-medium">${artwork.medium}</div>
-        </div>`;
+    artCategories.forEach((category) => {
+      const item = document.createElement("a");
+      item.className = "art-category";
+      item.href = `art/category.html?id=${encodeURIComponent(category.slug)}`;
+      item.setAttribute("aria-label", `View ${category.title} gallery`);
+      const img = document.createElement("img");
+      img.src = `assets/${category.image}`;
+      img.alt = category.title;
+      img.loading = "lazy";
+      const overlay = document.createElement("div");
+      overlay.className = "art-category-overlay";
+      const title = document.createElement("h3");
+      title.className = "art-category-title";
+      title.textContent = category.title;
+      const arrow = document.createElement("span");
+      arrow.className = "art-category-arrow";
+      arrow.setAttribute("aria-hidden", "true");
+      overlay.append(title, arrow);
+      item.append(img, overlay);
       artGrid.appendChild(item);
     });
 
@@ -732,8 +795,8 @@
       filmGrid.innerHTML = '<p style="font-size:12px;color:#8a867f">No film data found. Check portfolio-data.js.</p>';
     }
 
-    if (!artworks.length && artGrid) {
-      artGrid.innerHTML = '<p style="font-size:12px;color:#8a867f">No art data found. Check portfolio-data.js.</p>';
+    if (!artCategories.length && artGrid) {
+      artGrid.innerHTML = '<p style="font-size:12px;color:#8a867f">No art categories found. Check art-categories.js.</p>';
     }
   </script>
 
