@@ -538,7 +538,7 @@ window.PORTFOLIO_ART_WORKS = [
    {
     category: "digital-portraits",
     image: "harry.webp",
-    title: "HARRY",
+    title: "Hatty Melling / Harry Beltic / The Queen's gambit - Netflix Series",
     medium: "Photoshop / Digital portrait",
      status: "Available as a print"
   },
@@ -553,6 +553,20 @@ window.PORTFOLIO_ART_WORKS = [
     category: "digital-portraits",
     image: "marcin.webp",
     title: "Marcin Dorociński / Wasilij Borgow / The Queen's gambit - Netflix Series",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "shaibel.webp",
+    title: "Bill Camp / Mr Shaibel / The Queen's gambit - Netflix Series",
+    medium: "Photoshop / Digital portrait",
+     status: "Available as a print"
+  },
+   {
+    category: "digital-portraits",
+    image: "shaibel.webp",
+    title: "Bill Camp / Mr Shaibel / The Queen's gambit - Netflix Series",
     medium: "Photoshop / Digital portrait",
      status: "Available as a print"
   },
