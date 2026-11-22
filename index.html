@@ -549,11 +549,14 @@
     }
 
     /* v42 — ART: five category covers, with the same 30px circle as FILM. */
+    /* v44: square ART tiles have the same height as 16:9 FILM tiles above.
+       FILM uses 3 columns on desktop, 2 on tablets, 1 on phones. */
     .art-grid{
       display:grid;
-      grid-template-columns:repeat(3,minmax(0,1fr));
+      grid-template-columns:repeat(5, calc(18.75% - 5.25px));
       gap:14px;
       columns:auto;
+      justify-content:start;
     }
     .art-category{
       position:relative;
@@ -596,8 +599,12 @@
     }
     .art-category:hover .art-category-arrow{transform:scale(1.28)}
     .art-category:focus-visible{outline:2px solid var(--heading);outline-offset:3px}
-    @media(max-width:900px){.art-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
-    @media(max-width:620px){.art-grid{grid-template-columns:1fr;gap:12px}}
+    @media(max-width:900px){
+      .art-grid{grid-template-columns:repeat(3, calc(28.125% - 3.9375px));gap:14px}
+    }
+    @media(max-width:620px){
+      .art-grid{grid-template-columns:56.25%;gap:14px}
+    }
     @media(hover:none){.art-category-overlay{opacity:1}}
   </style>
 </head>
