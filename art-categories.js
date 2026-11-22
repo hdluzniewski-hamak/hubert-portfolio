@@ -17,6 +17,10 @@ window.PORTFOLIO_ART_CATEGORIES = [
 */
 window.PORTFOLIO_ART_WORKS = [
 
+    // ==========================================
+  // OIL
+  // ==========================================
+
    {
     category: "oil-paintings",
     image: "focus.webp",
@@ -101,6 +105,31 @@ window.PORTFOLIO_ART_WORKS = [
     medium: "Oil on canvas, 60 × 80 cm",
       status: "Available"
   },
+
+    // ==========================================
+  // INK
+  // ==========================================
+
+ {
+    category: "line-art",
+    image: "acrobatic.webp",
+    title: "ACROBATIC",
+    medium: "Ink on paper, 30 × 40 cm",
+      status: "Available"
+  },
+    // ==========================================
+  // ILUSTRATION
+  // ==========================================
+
+
+    // ==========================================
+  // PENCIL
+  // ==========================================
+
+
+    // ==========================================
+  // DIGITAL PORTRAITS
+  // ==========================================
   {
     category: "pencil",
     image: "drawing-01.webp",
