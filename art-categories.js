@@ -399,6 +399,70 @@ window.PORTFOLIO_ART_WORKS = [
     medium: "Pencil on paper",
      status: "Available"
   },
+   {
+    category: "pencil",
+    image: "remember.webp",
+    title: "BEACH GIRL",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+   {
+    category: "pencil",
+    image: "dancer.webp",
+    title: "SCENE DANCER",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+   {
+    category: "pencil",
+    image: "holidays.webp",
+    title: "HOLIDAYS",
+    medium: "Pencil on paper",
+     status: "no longer available"
+  },
+   {
+    category: "pencil",
+    image: "casserole.webp",
+    title: "CASSEROLE",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+   {
+    category: "pencil",
+    image: "sandwitch.webp",
+    title: "SANDWITCH",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+   {
+    category: "pencil",
+    image: "dissatisfied.webp",
+    title: "DISSATISFIED LADY",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+   {
+    category: "pencil",
+    image: "carpenter.webp",
+    title: "CARPENTER",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+   {
+    category: "pencil",
+    image: "break.webp",
+    title: "BREAK",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+   {
+    category: "pencil",
+    image: "line.webp",
+    title: "IN THE LINE",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+   
 // ==========================================
 // DIGITAL PORTRAITS
 // ==========================================
