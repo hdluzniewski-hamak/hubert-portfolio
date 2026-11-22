@@ -385,6 +385,20 @@ window.PORTFOLIO_ART_WORKS = [
     medium: "Pencil on paper",
      status: "Available"
   },
+   {
+    category: "pencil",
+    image: "lady.webp",
+    title: "LADY",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
+   {
+    category: "pencil",
+    image: "bull.webp",
+    title: "BULL",
+    medium: "Pencil on paper",
+     status: "Available"
+  },
      {
     category: "pencil",
     image: "guest.webp",
@@ -401,7 +415,7 @@ window.PORTFOLIO_ART_WORKS = [
   },
    {
     category: "pencil",
-    image: "remember.webp",
+    image: "remeber.webp",
     title: "BEACH GIRL",
     medium: "Pencil on paper",
      status: "Available"
