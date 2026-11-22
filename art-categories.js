@@ -126,16 +126,93 @@ window.PORTFOLIO_ART_WORKS = [
   },
    {
     category: "line-art",
-    image: "spell.webp",
-    title: "SPELL",
+    image: "spells.webp",
+    title: "SPELLS",
     medium: "Ink on paper, 15 × 20 cm",
       status: "Available"
   },
    {
     category: "line-art",
-    image: "javier.webp",
-    title: "JAVIER",
-    medium: "Ink on paper, 14 × 21 cm",
+    image: "wool.webp",
+    title: "WOOL",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "birds.webp",
+    title: "BIRDS",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "beads.webp",
+    title: "BEADS",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "leon.webp",
+    title: "LEON",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "sceptic.webp",
+    title: "SCEPTIC",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "sport.webp",
+    title: "SPORT",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "mediation.webp",
+    title: "MEDIATION",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "scate.webp",
+    title: "SCATE BOARD",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "faustyna.webp",
+    title: "FAUSTYNA",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "waiting.webp",
+    title: "WAITING",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "lego.webp",
+    title: "LEGO",
+    medium: "Ink on paper, 15 × 20 cm",
+      status: "Available"
+  },
+   {
+    category: "line-art",
+    image: "blanket.webp",
+    title: "BLANKET",
+    medium: "Ink on paper, 15 × 20 cm",
       status: "Available"
   },
     // ==========================================
