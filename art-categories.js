@@ -16,4 +16,17 @@ window.PORTFOLIO_ART_CATEGORIES = [
    { category:"oil-paintings", image:"my-painting.webp", title:"LIBRA", medium:"Oil on canvas, 40 × 50 cm" },
 */
 window.PORTFOLIO_ART_WORKS = [
+
+   {
+    category: "oil-paintings",
+    image: "libra.webp",
+    title: "LIBRA",
+    medium: "Oil on canvas, 30 × 40 cm"
+  },
+  {
+    category: "pencil",
+    image: "drawing-01.webp",
+    title: "UNTITLED",
+    medium: "Pencil on paper, 21 × 30 cm"
+  }
 ];
