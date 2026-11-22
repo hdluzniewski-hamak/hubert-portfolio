@@ -219,91 +219,91 @@ window.PORTFOLIO_ART_WORKS = [
   // ILUSTRATION
   // ==========================================
 {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "monkey.webp",
     title: "HAPPY MONKEY",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "dude.webp",
     title: "DUDE",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "yoga.webp",
     title: "YOGA CLASS",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "run.webp",
     title: "RUN",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "giraffe.webp",
     title: "GIRAFFE",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "january.webp",
     title: "JANUARY",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "evening.webp",
     title: "EVENING",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "owl.webp",
     title: "OWL",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "fog.webp",
     title: "FOG",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "forest.webp",
     title: "FOREST",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "gamee.webp",
     title: "GAME OVER",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "fist.webp",
     title: "FIST",
     medium: "digital painting",
       status: "Available in print"
          },
    {
-    category: "illustrations",
+    category: "digital-illustrations",
     image: "underground.webp",
     title: "UNDERGROUND",
     medium: "digital painting",
