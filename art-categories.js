@@ -1,4 +1,4 @@
-cti/* ART CATEGORIES — v42
+/* ART CATEGORIES — v42
    Change cover/title/order in the category array below.
    Add gallery images into PORTFOLIO_ART_WORKS (examples in guide).
    Do NOT overwrite your existing portfolio-data.js.
