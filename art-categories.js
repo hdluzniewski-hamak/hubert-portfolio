@@ -402,6 +402,6 @@ window.PORTFOLIO_ART_WORKS = [
     title: "TOURIST",
     medium: "Pencil on paper",
      status: "Available"
-  },
+  }
   
 ];
