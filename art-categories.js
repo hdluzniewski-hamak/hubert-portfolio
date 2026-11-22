@@ -523,13 +523,6 @@ window.PORTFOLIO_ART_WORKS = [
   },
    {
     category: "digital-portraits",
-    image: "prince.webp",
-    title: "PRINCE",
-    medium: "Photoshop / Digital portrait",
-     status: "Available as a print"
-  },
-   {
-    category: "digital-portraits",
     image: "nicole.webp",
     title: "Nicole Kidman / Grace Fraser / The Undoing",
     medium: "Photoshop / Digital portrait",
