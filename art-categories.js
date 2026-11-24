@@ -227,10 +227,10 @@ window.PORTFOLIO_ART_WORKS = [
          },
    {
     category: "digital-illustrations",
-    image: "monkey.webp",
-    title: "HAPPY MONKEY",
+    image: "run.webp",
+    title: "RUN",
     medium: "Procreate / Digital painting",
-      status: "Available as a printt"
+      status: "Available as a print"
          },
    {
     category: "digital-illustrations",
@@ -248,10 +248,10 @@ window.PORTFOLIO_ART_WORKS = [
          },
    {
     category: "digital-illustrations",
-    image: "run.webp",
-    title: "RUN",
+    image: "monkey.webp",
+    title: "HAPPY MONKEY",
     medium: "Procreate / Digital painting",
-      status: "Available as a print"
+      status: "Available as a printt"
          },
    {
     category: "digital-illustrations",
