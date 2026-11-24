@@ -13,7 +13,7 @@ window.PORTFOLIO_FILMS = [
     title: "JAŹNICKA Planet B",
     meta: "Music video / Direction",
     year: "",
-    description: `An experimental short exploring the idea that happiness, rather than success, is what truly drives us. Blending AI with traditional filmmaking and post-production, the film follows three characters in search of an emotional connection.`,
+    description: `A concept-driven music video directed with a strong focus on visual storytelling and creative art direction. Created through a hybrid workflow combining generative AI with traditional editing, online finishing, and compositing in Adobe After Effects.`,
     youtube: "TBQXugY_n5s",
     credits: [
       ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
