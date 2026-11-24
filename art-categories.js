@@ -290,13 +290,6 @@ window.PORTFOLIO_ART_WORKS = [
          },
    {
     category: "digital-illustrations",
-    image: "forest.webp",
-    title: "FOREST",
-    medium: "Procreate / Digital painting",
-      status: "Available as a print"
-         },
-   {
-    category: "digital-illustrations",
     image: "game.webp",
     title: "GAME OVER",
     medium: "Photoshop / Digital painting",
@@ -304,15 +297,22 @@ window.PORTFOLIO_ART_WORKS = [
          },
    {
     category: "digital-illustrations",
-    image: "fist.webp",
-    title: "FIST",
-    medium: "Photoshop / Digital painting",
+    image: "forest.webp",
+    title: "FOREST",
+    medium: "Procreate / Digital painting",
       status: "Available as a print"
          },
    {
     category: "digital-illustrations",
     image: "underground.webp",
     title: "UNDERGROUND",
+    medium: "Photoshop / Digital painting",
+      status: "Available as a print"
+         },
+   {
+    category: "digital-illustrations",
+    image: "fist.webp",
+    title: "FIST",
     medium: "Photoshop / Digital painting",
       status: "Available as a print"
          },
