@@ -252,10 +252,10 @@ window.PORTFOLIO_FILM_CAPTIONS = {
 };
 
 window.PORTFOLIO_FILM_ORDER = [
-  "odyseja",
-  "man-with-a-mask",
-  "i-would-dance",
   "planet-b",
+  "man-with-a-mask",
+  "odyseja",
+  "i-would-dance",
   "ai-future-asylum-decisions",
   "digital-visas-discriminations",
   "questions",
