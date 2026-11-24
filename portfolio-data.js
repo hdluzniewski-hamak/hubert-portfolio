@@ -8,21 +8,24 @@ Do not edit index.html to manage Film or Art.
 
 window.PORTFOLIO_FILMS = [
   {
-    slug: "odyseja",
-    image: "film-01.webp",
-    title: "ODYSEJA",
-    meta: "Direction / AI short film",
-    year: "2026",
-    description: "A contemporary interpretation of Homer’s Odyssey — a journey across the sea, through temptation and danger, where one direction remains more important than all others: the way home. Blending cinematic storytelling, AI tools and traditional post-production techniques, the film reimagines the ancient myth through a modern visual language.",
-    youtube: "jMsma0EnTxQ",
+    slug: "planet-b",
+    image: "film-04.webp",
+    title: "JAŹNICKA Planet B",
+    meta: "Music video / Direction",
+    year: "",
+    description: `An experimental short exploring the idea that happiness, rather than success, is what truly drives us. Blending AI with traditional filmmaking and post-production, the film follows three characters in search of an emotional connection.`,
+    youtube: "TBQXugY_n5s",
     credits: [
       ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
-      ["Visuals", "AI-generated imagery (Higgsfield)"],
-      ["Music", "AI-generated (Suno)"],
-      ["Sound", "ElevenLabs"]
+      ["Vocal/Lyric", "Kasia Jaźnicka"],
+      ["Music", "Marcin Kuczewski, Kasia Jaźnicka"],
+      ["Production", "Marcin Kuczewski"],
+      ["Mastering", "Brad Blackwood"],
+      ["Vocal Recording/MIX", "Chris Aiken"]
     ],
     position: "center"
   },
+ 
   {
     slug: "man-with-a-mask",
     image: "film-02.webp",
@@ -35,6 +38,22 @@ window.PORTFOLIO_FILMS = [
        ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
       ["Visuals", "AI-generated imagery (Higgsfield)"],
       ["Music", "AI-generated (Suno)"]
+    ],
+    position: "center"
+  },
+   {
+    slug: "odyseja",
+    image: "film-01.webp",
+    title: "ODYSEJA",
+    meta: "Direction / AI short film",
+    year: "2026",
+    description: "A contemporary interpretation of Homer’s Odyssey — a journey across the sea, through temptation and danger, where one direction remains more important than all others: the way home. Blending cinematic storytelling, AI tools and traditional post-production techniques, the film reimagines the ancient myth through a modern visual language.",
+    youtube: "jMsma0EnTxQ",
+    credits: [
+      ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
+      ["Visuals", "AI-generated imagery (Higgsfield)"],
+      ["Music", "AI-generated (Suno)"],
+      ["Sound", "ElevenLabs"]
     ],
     position: "center"
   },
@@ -54,24 +73,7 @@ window.PORTFOLIO_FILMS = [
     ],
     position: "center"
   },
-  {
-    slug: "planet-b",
-    image: "film-04.webp",
-    title: "JAŹNICKA Planet B",
-    meta: "Music video / Direction",
-    year: "",
-    description: `An experimental short exploring the idea that happiness, rather than success, is what truly drives us. Blending AI with traditional filmmaking and post-production, the film follows three characters in search of an emotional connection.`,
-    youtube: "TBQXugY_n5s",
-    credits: [
-      ["Concept, Direction, Editing & Online", "Hubert Dłużniewski"],
-      ["Vocal/Lyric", "Kasia Jaźnicka"],
-      ["Music", "Marcin Kuczewski, Kasia Jaźnicka"],
-      ["Production", "Marcin Kuczewski"],
-      ["Mastering", "Brad Blackwood"],
-      ["Vocal Recording/MIX", "Chris Aiken"]
-    ],
-    position: "center"
-  },
+  
   {
     slug: "ai-future-asylum-decisions",
     image: "film-05.webp",
